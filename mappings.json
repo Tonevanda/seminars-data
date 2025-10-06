@@ -1,0 +1,1827 @@
+{
+  "columns": {
+    "Platform": {
+      "should_map": true,
+      "property_match": {
+        "id": "P400",
+        "label": "platform",
+        "description": "platform for which a work was developed or released, or the specific platform version of a software product",
+        "match_type": "exact",
+        "source_search": "Platform"
+      }
+    },
+    "Content_Type": {
+      "should_map": true,
+      "property_match": {
+        "id": "P1163",
+        "label": "media type",
+        "description": "IANA-registered identifier for a file type",
+        "match_type": "first",
+        "source_search": "Content_Type"
+      }
+    },
+    "Post_ID": {
+      "should_map": true,
+      "property_match": {
+        "id": "P5933",
+        "label": "X post ID",
+        "description": "identifier of a status on X/Twitter",
+        "match_type": "first",
+        "source_search": "Post_ID"
+      }
+    },
+    "Timestamp": {
+      "should_map": true,
+      "property_match": {
+        "id": "P4895",
+        "label": "time index",
+        "description": "indicate when something happens relative to its beginning",
+        "match_type": "first",
+        "source_search": "Timestamp"
+      }
+    },
+    "User_Followers": {
+      "should_map": false,
+      "reason_skipped": "heuristic_skip_numeric_or_high_cardinality_or_long_text"
+    },
+    "Content_Text": {
+      "should_map": true,
+      "property_match": {}
+    },
+    "Language": {
+      "should_map": true,
+      "property_match": {
+        "id": "P407",
+        "label": "language of work or name",
+        "description": "language associated with this creative work (such as books, shows, songs, broadcasts or websites) or a name (for persons use \"native language\" (P103) and \"languages spoken, written or signed\" (P1412))",
+        "match_type": "prefix",
+        "source_search": "Language"
+      }
+    },
+    "Country": {
+      "should_map": true,
+      "property_match": {
+        "id": "P17",
+        "label": "country",
+        "description": "sovereign state that this item is in (not to be used for human beings)",
+        "match_type": "exact",
+        "source_search": "Country"
+      }
+    },
+    "Engagement_Score": {
+      "should_map": false,
+      "reason_skipped": "heuristic_skip_numeric_or_high_cardinality_or_long_text"
+    },
+    "Like_Count": {
+      "should_map": false,
+      "reason_skipped": "heuristic_skip_numeric_or_high_cardinality_or_long_text"
+    },
+    "Share_Count": {
+      "should_map": false,
+      "reason_skipped": "heuristic_skip_numeric_or_high_cardinality_or_long_text"
+    },
+    "Comment_Count": {
+      "should_map": false,
+      "reason_skipped": "heuristic_skip_numeric_or_high_cardinality_or_long_text"
+    },
+    "Verification_Status": {
+      "should_map": true,
+      "property_match": {}
+    },
+    "Content_Category": {
+      "should_map": true,
+      "property_match": {}
+    },
+    "Misinformation_Flag": {
+      "should_map": true,
+      "property_match": {}
+    },
+    "Fact_Check_Source": {
+      "should_map": true,
+      "property_match": {}
+    },
+    "Sentiment_Score": {
+      "should_map": false,
+      "reason_skipped": "heuristic_skip_numeric_or_high_cardinality_or_long_text"
+    },
+    "Toxicity_Score": {
+      "should_map": false,
+      "reason_skipped": "heuristic_skip_numeric_or_high_cardinality_or_long_text"
+    },
+    "Political_Leaning": {
+      "should_map": true,
+      "property_match": {
+        "id": "P1142",
+        "label": "political ideology",
+        "description": "political ideology of an organization or person or of a work (such as a newspaper)",
+        "match_type": "first",
+        "source_search": "Political_Leaning"
+      }
+    },
+    "Topic_Tags": {
+      "should_map": true,
+      "property_match": {}
+    },
+    "Content_Length_Chars": {
+      "should_map": false,
+      "reason_skipped": "heuristic_skip_numeric_or_high_cardinality_or_long_text"
+    },
+    "Media_Type": {
+      "should_map": true,
+      "property_match": {
+        "id": "P437",
+        "label": "distribution format",
+        "description": "method (or type) of distribution for the subject",
+        "match_type": "first",
+        "source_search": "Media_Type"
+      }
+    },
+    "Has_External_Link": {
+      "should_map": false,
+      "reason_skipped": "heuristic_skip_numeric_or_high_cardinality_or_long_text"
+    },
+    "Viral_Score": {
+      "should_map": false,
+      "reason_skipped": "heuristic_skip_numeric_or_high_cardinality_or_long_text"
+    },
+    "Moderation_Action": {
+      "should_map": true,
+      "property_match": {}
+    }
+  },
+  "values": {
+    "Platform": {
+      "Facebook": {
+        "qid": "Q355",
+        "label": "Facebook",
+        "description": "American online social media and social networking service",
+        "confidence": "high"
+      },
+      "Instagram": {
+        "qid": "Q209330",
+        "label": "Instagram",
+        "description": "photo and video sharing social network owned by Meta Platforms",
+        "confidence": "high"
+      },
+      "LinkedIn": {
+        "qid": "Q213660",
+        "label": "LinkedIn",
+        "description": "American social networking website for people in professional occupations",
+        "confidence": "high"
+      },
+      "Reddit": {
+        "qid": "Q1136",
+        "label": "Reddit",
+        "description": "American social news aggregation website and discussion portal",
+        "confidence": "high"
+      },
+      "TikTok": {
+        "qid": "Q48938223",
+        "label": "TikTok",
+        "description": "video-focused social media and social networking service owned by ByteDance",
+        "confidence": "high"
+      },
+      "Twitter": {
+        "qid": "Q1390577",
+        "label": "Twitter",
+        "description": "defunct American social media company",
+        "confidence": "high"
+      },
+      "YouTube": {
+        "qid": "Q866",
+        "label": "YouTube",
+        "description": "American video-sharing platform owned by Alphabet Inc.",
+        "confidence": "high"
+      }
+    },
+    "Content_Type": {
+      "Article": {
+        "qid": "Q191067",
+        "label": "article",
+        "description": "text that forms an independent part of a publication",
+        "confidence": "high"
+      },
+      "Comment": {
+        "qid": "Q58897583",
+        "label": "comment",
+        "description": "work consisting of a critical or explanatory note written to discuss, support, or dispute an article or other presentation previously published",
+        "confidence": "high"
+      },
+      "Dance": {
+        "qid": "Q11639",
+        "label": "dance",
+        "description": "rhythmic movement of the body",
+        "confidence": "high"
+      },
+      "Live": {
+        "qid": "Q23950121",
+        "label": "Live",
+        "description": "given name",
+        "confidence": "high"
+      },
+      "Post": {
+        "qid": "Q21491634",
+        "label": "Post",
+        "description": "family name",
+        "confidence": "high"
+      },
+      "Reel": {
+        "qid": "Q37312296",
+        "label": "Reel",
+        "description": "family name",
+        "confidence": "high"
+      },
+      "Short": {
+        "qid": "Q114870320",
+        "label": "short",
+        "description": "short steps section of a sardana",
+        "confidence": "high"
+      },
+      "Story": {
+        "qid": "Q16883891",
+        "label": "Story",
+        "description": "family name",
+        "confidence": "high"
+      },
+      "Thread": {
+        "qid": "Q1391831",
+        "label": "thread",
+        "description": "continuous strand formed of filament fiber or spun, twisted, and plied short fibers, used for sewing and needlework",
+        "confidence": "high"
+      },
+      "Tweet": {
+        "qid": "Q37473904",
+        "label": "Tweet",
+        "description": "family name",
+        "confidence": "high"
+      },
+      "Video": {
+        "qid": "Q625525",
+        "label": "video",
+        "description": "HTML element",
+        "confidence": "high"
+      }
+    },
+    "Post_ID": {
+      "fb_002": {
+        "qid": null,
+        "label": null,
+        "confidence": "none"
+      },
+      "fb_009": {
+        "qid": null,
+        "label": null,
+        "confidence": "none"
+      },
+      "fb_016": {
+        "qid": null,
+        "label": null,
+        "confidence": "none"
+      },
+      "fb_023": {
+        "qid": null,
+        "label": null,
+        "confidence": "none"
+      },
+      "fb_030": {
+        "qid": null,
+        "label": null,
+        "confidence": "none"
+      },
+      "fb_037": {
+        "qid": null,
+        "label": null,
+        "confidence": "none"
+      },
+      "ig_003": {
+        "qid": null,
+        "label": null,
+        "confidence": "none"
+      },
+      "ig_010": {
+        "qid": null,
+        "label": null,
+        "confidence": "none"
+      },
+      "ig_017": {
+        "qid": null,
+        "label": null,
+        "confidence": "none"
+      },
+      "ig_024": {
+        "qid": null,
+        "label": null,
+        "confidence": "none"
+      },
+      "ig_031": {
+        "qid": null,
+        "label": null,
+        "confidence": "none"
+      },
+      "ig_038": {
+        "qid": null,
+        "label": null,
+        "confidence": "none"
+      },
+      "ln_006": {
+        "qid": null,
+        "label": null,
+        "confidence": "none"
+      },
+      "ln_014": {
+        "qid": null,
+        "label": null,
+        "confidence": "none"
+      },
+      "ln_021": {
+        "qid": null,
+        "label": null,
+        "confidence": "none"
+      },
+      "ln_028": {
+        "qid": null,
+        "label": null,
+        "confidence": "none"
+      },
+      "ln_035": {
+        "qid": null,
+        "label": null,
+        "confidence": "none"
+      },
+      "rd_007": {
+        "qid": null,
+        "label": null,
+        "confidence": "none"
+      },
+      "rd_015": {
+        "qid": null,
+        "label": null,
+        "confidence": "none"
+      },
+      "rd_022": {
+        "qid": "Q31281658",
+        "label": "RD-0225",
+        "description": null,
+        "confidence": "medium"
+      },
+      "rd_029": {
+        "qid": null,
+        "label": null,
+        "confidence": "none"
+      },
+      "rd_036": {
+        "qid": null,
+        "label": null,
+        "confidence": "none"
+      },
+      "tk_005": {
+        "qid": null,
+        "label": null,
+        "confidence": "none"
+      },
+      "tk_012": {
+        "qid": null,
+        "label": null,
+        "confidence": "none"
+      },
+      "tk_020": {
+        "qid": null,
+        "label": null,
+        "confidence": "none"
+      },
+      "tk_027": {
+        "qid": null,
+        "label": null,
+        "confidence": "none"
+      },
+      "tk_034": {
+        "qid": null,
+        "label": null,
+        "confidence": "none"
+      },
+      "tw_001": {
+        "qid": null,
+        "label": null,
+        "confidence": "none"
+      },
+      "tw_008": {
+        "qid": null,
+        "label": null,
+        "confidence": "none"
+      },
+      "tw_013": {
+        "qid": null,
+        "label": null,
+        "confidence": "none"
+      },
+      "tw_018": {
+        "qid": null,
+        "label": null,
+        "confidence": "none"
+      },
+      "tw_025": {
+        "qid": null,
+        "label": null,
+        "confidence": "none"
+      },
+      "tw_032": {
+        "qid": null,
+        "label": null,
+        "confidence": "none"
+      },
+      "tw_039": {
+        "qid": "Q54930971",
+        "label": "NPC-TW01",
+        "description": "cell line",
+        "confidence": "medium"
+      },
+      "yt_004": {
+        "qid": null,
+        "label": null,
+        "confidence": "none"
+      },
+      "yt_011": {
+        "qid": null,
+        "label": null,
+        "confidence": "none"
+      },
+      "yt_019": {
+        "qid": null,
+        "label": null,
+        "confidence": "none"
+      },
+      "yt_026": {
+        "qid": null,
+        "label": null,
+        "confidence": "none"
+      },
+      "yt_033": {
+        "qid": null,
+        "label": null,
+        "confidence": "none"
+      },
+      "yt_040": {
+        "qid": null,
+        "label": null,
+        "confidence": "none"
+      }
+    },
+    "Timestamp": {
+      "2024-08-13T07:45:22Z": {
+        "qid": null,
+        "label": null,
+        "confidence": "none"
+      },
+      "2024-08-13T08:33:19Z": {
+        "qid": null,
+        "label": null,
+        "confidence": "none"
+      },
+      "2024-08-13T09:15:23Z": {
+        "qid": null,
+        "label": null,
+        "confidence": "none"
+      },
+      "2024-08-13T09:55:17Z": {
+        "qid": null,
+        "label": null,
+        "confidence": "none"
+      },
+      "2024-08-13T10:12:44Z": {
+        "qid": null,
+        "label": null,
+        "confidence": "none"
+      },
+      "2024-08-13T11:32:45Z": {
+        "qid": null,
+        "label": null,
+        "confidence": "none"
+      },
+      "2024-08-13T12:44:55Z": {
+        "qid": null,
+        "label": null,
+        "confidence": "none"
+      },
+      "2024-08-13T13:17:55Z": {
+        "qid": null,
+        "label": null,
+        "confidence": "none"
+      },
+      "2024-08-13T14:21:12Z": {
+        "qid": null,
+        "label": null,
+        "confidence": "none"
+      },
+      "2024-08-13T15:44:28Z": {
+        "qid": null,
+        "label": null,
+        "confidence": "none"
+      },
+      "2024-08-13T16:45:33Z": {
+        "qid": null,
+        "label": null,
+        "confidence": "none"
+      },
+      "2024-08-13T18:22:11Z": {
+        "qid": null,
+        "label": null,
+        "confidence": "none"
+      },
+      "2024-08-13T19:23:41Z": {
+        "qid": null,
+        "label": null,
+        "confidence": "none"
+      },
+      "2024-08-13T20:33:17Z": {
+        "qid": null,
+        "label": null,
+        "confidence": "none"
+      },
+      "2024-08-13T21:15:37Z": {
+        "qid": null,
+        "label": null,
+        "confidence": "none"
+      },
+      "2024-08-13T22:11:33Z": {
+        "qid": null,
+        "label": null,
+        "confidence": "none"
+      },
+      "2024-08-14T06:22:14Z": {
+        "qid": null,
+        "label": null,
+        "confidence": "none"
+      },
+      "2024-08-14T08:33:44Z": {
+        "qid": null,
+        "label": null,
+        "confidence": "none"
+      },
+      "2024-08-14T09:12:33Z": {
+        "qid": null,
+        "label": null,
+        "confidence": "none"
+      },
+      "2024-08-14T11:17:42Z": {
+        "qid": null,
+        "label": null,
+        "confidence": "none"
+      },
+      "2024-08-14T12:44:19Z": {
+        "qid": null,
+        "label": null,
+        "confidence": "none"
+      },
+      "2024-08-14T14:33:28Z": {
+        "qid": null,
+        "label": null,
+        "confidence": "none"
+      },
+      "2024-08-14T15:17:28Z": {
+        "qid": null,
+        "label": null,
+        "confidence": "none"
+      },
+      "2024-08-14T16:33:27Z": {
+        "qid": null,
+        "label": null,
+        "confidence": "none"
+      },
+      "2024-08-14T17:45:55Z": {
+        "qid": null,
+        "label": null,
+        "confidence": "none"
+      },
+      "2024-08-14T18:55:11Z": {
+        "qid": null,
+        "label": null,
+        "confidence": "none"
+      },
+      "2024-08-14T19:15:52Z": {
+        "qid": null,
+        "label": null,
+        "confidence": "none"
+      },
+      "2024-08-14T20:28:41Z": {
+        "qid": null,
+        "label": null,
+        "confidence": "none"
+      },
+      "2024-08-14T21:22:16Z": {
+        "qid": null,
+        "label": null,
+        "confidence": "none"
+      },
+      "2024-08-14T23:41:33Z": {
+        "qid": null,
+        "label": null,
+        "confidence": "none"
+      },
+      "2024-08-15T05:22:37Z": {
+        "qid": null,
+        "label": null,
+        "confidence": "none"
+      },
+      "2024-08-15T10:44:18Z": {
+        "qid": null,
+        "label": null,
+        "confidence": "none"
+      },
+      "2024-08-15T11:33:17Z": {
+        "qid": null,
+        "label": null,
+        "confidence": "none"
+      },
+      "2024-08-15T13:28:45Z": {
+        "qid": null,
+        "label": null,
+        "confidence": "none"
+      },
+      "2024-08-15T14:22:41Z": {
+        "qid": null,
+        "label": null,
+        "confidence": "none"
+      },
+      "2024-08-15T16:11:29Z": {
+        "qid": null,
+        "label": null,
+        "confidence": "none"
+      },
+      "2024-08-15T17:33:55Z": {
+        "qid": null,
+        "label": null,
+        "confidence": "none"
+      },
+      "2024-08-15T19:45:23Z": {
+        "qid": null,
+        "label": null,
+        "confidence": "none"
+      },
+      "2024-08-15T20:15:44Z": {
+        "qid": null,
+        "label": null,
+        "confidence": "none"
+      },
+      "2024-08-15T22:41:18Z": {
+        "qid": null,
+        "label": null,
+        "confidence": "none"
+      }
+    },
+    "Content_Text": {
+      "5G towers cause health problems - here's the proof!": {
+        "qid": null,
+        "label": null,
+        "confidence": "none"
+      },
+      "Actually the earth is flat and all space agencies are lying to us about it": {
+        "qid": null,
+        "label": null,
+        "confidence": "none"
+      },
+      "Beautiful day at the climate protest! Every voice matters for our planet": {
+        "qid": null,
+        "label": null,
+        "confidence": "none"
+      },
+      "Beautiful sunrise from my solar panel installation - clean energy feels good!": {
+        "qid": null,
+        "label": null,
+        "confidence": "none"
+      },
+      "Breaking: New renewable energy breakthrough could revolutionize solar power": {
+        "qid": null,
+        "label": null,
+        "confidence": "none"
+      },
+      "Chemtrails are real and they're poisoning our water supply": {
+        "qid": null,
+        "label": null,
+        "confidence": "none"
+      },
+      "Climate change is just a natural cycle - the Earth has always warmed and cooled": {
+        "qid": null,
+        "label": null,
+        "confidence": "none"
+      },
+      "Complete beginner's guide to understanding blockchain technology": {
+        "qid": null,
+        "label": null,
+        "confidence": "none"
+      },
+      "Conspiracy theory about birds not being real - they're government drones!": {
+        "qid": null,
+        "label": null,
+        "confidence": "none"
+      },
+      "Dancing robots showing off latest AI capabilities!": {
+        "qid": null,
+        "label": null,
+        "confidence": "none"
+      },
+      "Debunking common myths about renewable energy with actual data": {
+        "qid": null,
+        "label": null,
+        "confidence": "none"
+      },
+      "Detailed analysis of why current inflation data is completely manipulated": {
+        "qid": null,
+        "label": null,
+        "confidence": "none"
+      },
+      "Detailed breakdown of why universal basic income would destroy the economy": {
+        "qid": null,
+        "label": null,
+        "confidence": "none"
+      },
+      "Documentary: The Real Truth About Election Security": {
+        "qid": null,
+        "label": null,
+        "confidence": "none"
+      },
+      "Electric grid can't handle renewable energy - blackouts incoming this winter": {
+        "qid": null,
+        "label": null,
+        "confidence": "none"
+      },
+      "Electric vehicles are actually worse for environment than gas cars": {
+        "qid": null,
+        "label": null,
+        "confidence": "none"
+      },
+      "Excited to announce our new AI research breakthrough in healthcare diagnostics": {
+        "qid": null,
+        "label": null,
+        "confidence": "none"
+      },
+      "How AI Will Transform Healthcare: Expert Panel Discussion": {
+        "qid": null,
+        "label": null,
+        "confidence": "none"
+      },
+      "Investigating claims about voter fraud in recent elections": {
+        "qid": null,
+        "label": null,
+        "confidence": "none"
+      },
+      "Ivermectin cures COVID better than any vaccine - big pharma doesn't want you to know": {
+        "qid": null,
+        "label": null,
+        "confidence": "none"
+      },
+      "Just got my booster shot! Feeling protected and grateful for science": {
+        "qid": null,
+        "label": null,
+        "confidence": "none"
+      },
+      "Live Q&A with climate scientists about extreme weather patterns": {
+        "qid": null,
+        "label": null,
+        "confidence": "none"
+      },
+      "Live stream: Scientists explain breakthrough in fusion energy research": {
+        "qid": null,
+        "label": null,
+        "confidence": "none"
+      },
+      "Masks don't work against viruses - government lies to control us": {
+        "qid": null,
+        "label": null,
+        "confidence": "none"
+      },
+      "Mental health awareness is so important - sharing resources for anyone struggling": {
+        "qid": null,
+        "label": null,
+        "confidence": "none"
+      },
+      "New dance trend but make it educational about climate science!": {
+        "qid": null,
+        "label": null,
+        "confidence": "none"
+      },
+      "New study shows plant-based diets reduce carbon footprint by 73%": {
+        "qid": null,
+        "label": null,
+        "confidence": "none"
+      },
+      "New vaccine study shows 99% effectiveness against latest variant": {
+        "qid": null,
+        "label": null,
+        "confidence": "none"
+      },
+      "Our startup just raised $50M for revolutionary quantum computing breakthrough": {
+        "qid": null,
+        "label": null,
+        "confidence": "none"
+      },
+      "Proud to announce our company achieved carbon neutrality ahead of schedule": {
+        "qid": null,
+        "label": null,
+        "confidence": "none"
+      },
+      "Quick explanation of how machine learning actually works": {
+        "qid": null,
+        "label": null,
+        "confidence": "none"
+      },
+      "Quick tutorial on identifying misinformation in your social media feed": {
+        "qid": null,
+        "label": null,
+        "confidence": "none"
+      },
+      "Sharing this amazing documentary about ocean conservation efforts": {
+        "qid": null,
+        "label": null,
+        "confidence": "none"
+      },
+      "Showing how easy it is to spot deepfake videos - media literacy matters!": {
+        "qid": null,
+        "label": null,
+        "confidence": "none"
+      },
+      "The Future of Work: How AI Will Create More Jobs Than It Destroys": {
+        "qid": null,
+        "label": null,
+        "confidence": "none"
+      },
+      "The ethics of AI development: Why diverse teams matter more than ever": {
+        "qid": null,
+        "label": null,
+        "confidence": "none"
+      },
+      "The moonlanding was definitely fake - here's why the shadows don't match": {
+        "qid": null,
+        "label": null,
+        "confidence": "none"
+      },
+      "Vaccines contain microchips for government tracking - wake up people!": {
+        "qid": null,
+        "label": null,
+        "confidence": "none"
+      },
+      "Why 5G is Actually Safe: Electromagnetic Radiation Explained": {
+        "qid": null,
+        "label": null,
+        "confidence": "none"
+      },
+      "🧵 Thread on why crypto will replace all traditional banking within 5 years": {
+        "qid": null,
+        "label": null,
+        "confidence": "none"
+      }
+    },
+    "Language": {
+      "English": {
+        "qid": "Q1860",
+        "label": "English",
+        "description": "West Germanic language",
+        "confidence": "high"
+      }
+    },
+    "Country": {
+      "Australia": {
+        "qid": "Q408",
+        "label": "Australia",
+        "description": "country in Oceania",
+        "confidence": "high"
+      },
+      "Brazil": {
+        "qid": "Q155",
+        "label": "Brazil",
+        "description": "country in South America",
+        "confidence": "high"
+      },
+      "Canada": {
+        "qid": "Q16",
+        "label": "Canada",
+        "description": "country in North America",
+        "confidence": "high"
+      },
+      "France": {
+        "qid": "Q142",
+        "label": "France",
+        "description": "country in Western Europe and other continents (through its overseas territories in America, Africa and Oceania)",
+        "confidence": "high"
+      },
+      "Germany": {
+        "qid": "Q183",
+        "label": "Germany",
+        "description": "country in Central Europe",
+        "confidence": "high"
+      },
+      "India": {
+        "qid": "Q668",
+        "label": "India",
+        "description": "country in South Asia",
+        "confidence": "high"
+      },
+      "Japan": {
+        "qid": "Q17",
+        "label": "Japan",
+        "description": "island country in East Asia",
+        "confidence": "high"
+      },
+      "Netherlands": {
+        "qid": "Q55",
+        "label": "Netherlands",
+        "description": "country in Northwestern Europe with territories in the Caribbean",
+        "confidence": "high"
+      },
+      "Singapore": {
+        "qid": "Q334",
+        "label": "Singapore",
+        "description": "sovereign island country and city-state in maritime Southeast Asia",
+        "confidence": "high"
+      },
+      "South Korea": {
+        "qid": "Q884",
+        "label": "South Korea",
+        "description": "country in East Asia",
+        "confidence": "high"
+      },
+      "Sweden": {
+        "qid": "Q34",
+        "label": "Sweden",
+        "description": "country in Northern Europe",
+        "confidence": "high"
+      },
+      "United Kingdom": {
+        "qid": "Q145",
+        "label": "United Kingdom",
+        "description": "country in north-west Europe",
+        "confidence": "high"
+      },
+      "United States": {
+        "qid": "Q30",
+        "label": "United States",
+        "description": "country located primarily in North America",
+        "confidence": "high"
+      }
+    },
+    "Verification_Status": {
+      "Unverified": {
+        "qid": "Q111939328",
+        "label": "Unverified List",
+        "description": "United States trade restriction",
+        "confidence": "medium"
+      },
+      "Verified": {
+        "qid": "Q96358549",
+        "label": "Verified",
+        "description": "United Nations organization",
+        "confidence": "high"
+      }
+    },
+    "Content_Category": {
+      "Conspiracy": {
+        "qid": "Q930164",
+        "label": "conspiracy",
+        "description": "secret plan or agreement for an unlawful or harmful purpose, especially with political motivation",
+        "confidence": "high"
+      },
+      "Economics": {
+        "qid": "Q8134",
+        "label": "economics",
+        "description": "social science that studies the production, distribution, and consumption of goods and services",
+        "confidence": "high"
+      },
+      "Education": {
+        "qid": "Q8434",
+        "label": "education",
+        "description": "transmission of knowledge and skills",
+        "confidence": "high"
+      },
+      "Energy": {
+        "qid": "Q11379",
+        "label": "energy",
+        "description": "quantitative property of a physical system, recognizable in the performance of work and in the form of heat and light",
+        "confidence": "high"
+      },
+      "Entertainment": {
+        "qid": "Q173799",
+        "label": "entertainment",
+        "description": "activity that holds attention or gives pleasure",
+        "confidence": "high"
+      },
+      "Environment": {
+        "qid": "Q2249676",
+        "label": "environment",
+        "description": "surrounding of an organism or population",
+        "confidence": "high"
+      },
+      "Finance": {
+        "qid": "Q43015",
+        "label": "finance",
+        "description": "academic discipline studying businesses, financing, investments and protection of economic value",
+        "confidence": "high"
+      },
+      "Health": {
+        "qid": "Q12147",
+        "label": "health",
+        "description": "desirable level of functional or metabolic efficiency of a living being",
+        "confidence": "high"
+      },
+      "Politics": {
+        "qid": "Q7163",
+        "label": "politics",
+        "description": "activities associated with group decisions",
+        "confidence": "high"
+      },
+      "Science": {
+        "qid": "Q192864",
+        "label": "Science",
+        "description": "academic journal of the American Association for the Advancement of Science",
+        "confidence": "high"
+      },
+      "Technology": {
+        "qid": "Q11016",
+        "label": "technology",
+        "description": "making, modification, usage, and knowledge of tools, machines, techniques, crafts, systems, and methods of organization, or tools and techniques so created",
+        "confidence": "high"
+      }
+    },
+    "Misinformation_Flag": {
+      "False": {
+        "qid": "Q105812849",
+        "label": "False",
+        "description": "family name",
+        "confidence": "high"
+      },
+      "True": {
+        "qid": "Q16927530",
+        "label": "True",
+        "description": "family name",
+        "confidence": "high"
+      },
+      "Uncertain": {
+        "qid": "Q969536",
+        "label": "Uncertain",
+        "description": "city in Harrison County, Texas, United States",
+        "confidence": "high"
+      }
+    },
+    "Fact_Check_Source": {
+      "AP_News": {
+        "qid": "Q4653479",
+        "label": "AP Newsfeatures",
+        "description": "cartoon and comic strip division of Associated Press",
+        "confidence": "medium"
+      },
+      "Audubon_Society": {
+        "qid": "Q1646000",
+        "label": "National Audubon Society",
+        "description": "American non-profit organization",
+        "confidence": "medium"
+      },
+      "CDC": {
+        "qid": "Q106636610",
+        "label": "CDC",
+        "description": "cycling race class defined by the International Cycling Union",
+        "confidence": "high"
+      },
+      "DOE": {
+        "qid": "Q37110043",
+        "label": "Doe",
+        "description": "family name",
+        "confidence": "high"
+      },
+      "EPA": {
+        "qid": "Q20112200",
+        "label": "EPA",
+        "description": "Norwegian musical group",
+        "confidence": "high"
+      },
+      "FDA": {
+        "qid": "Q5425269",
+        "label": "FDA Consumer",
+        "description": "healthcare publication",
+        "confidence": "medium"
+      },
+      "IEA": {
+        "qid": "Q23190881",
+        "label": "IEA",
+        "description": "Gene Ontology evidence code used for annotations that are automatically (computationally) assigned to gene products without further human review.",
+        "confidence": "high"
+      },
+      "IEEE": {
+        "qid": "Q127793",
+        "label": "IEEE Transactions on Information Theory",
+        "description": "journal",
+        "confidence": "medium"
+      },
+      "IPCC": {
+        "qid": "Q103843442",
+        "label": "IPCC Sixth Assessment Report",
+        "description": "intergovernmental report on climate change",
+        "confidence": "medium"
+      },
+      "ITER": {
+        "qid": "Q104529362",
+        "label": "Iter",
+        "description": "family name",
+        "confidence": "high"
+      },
+      "MIT": {
+        "qid": "Q334661",
+        "label": "MIT License",
+        "description": "permissive free software license",
+        "confidence": "medium"
+      },
+      "MIT_Media_Lab": {
+        "qid": "Q1373549",
+        "label": "MIT Media Lab",
+        "description": "interdisciplinary research laboratory at the Massachusetts Institute of Technology",
+        "confidence": "medium"
+      },
+      "McKinsey": {
+        "qid": "Q6801999",
+        "label": "McKinsey",
+        "description": "family name",
+        "confidence": "high"
+      },
+      "Multiple": {
+        "qid": "Q8277",
+        "label": "multiple sclerosis",
+        "description": "disease that damages the myelin sheaths around nerve axons",
+        "confidence": "medium"
+      },
+      "NASA": {
+        "qid": "Q309751",
+        "label": "Nasa",
+        "description": "genus of plants",
+        "confidence": "high"
+      },
+      "NHS": {
+        "qid": "Q18030141",
+        "label": "NHS",
+        "description": "protein-coding gene in the species Homo sapiens",
+        "confidence": "high"
+      },
+      "National_Geographic": {
+        "qid": "Q5973845",
+        "label": "National Geographic",
+        "description": "monthly geography, history, nature, and science magazine",
+        "confidence": "medium"
+      },
+      "Nature": {
+        "qid": "Q180445",
+        "label": "Nature",
+        "description": "British scientific journal since 1869",
+        "confidence": "high"
+      },
+      "Nature_Journal": {
+        "qid": "Q27723996",
+        "label": "Nature Journal (Opole)",
+        "description": "journal",
+        "confidence": "medium"
+      },
+      "Reuters": {
+        "qid": "Q130879",
+        "label": "Reuters",
+        "description": "international news agency",
+        "confidence": "high"
+      },
+      "UN_Global_Compact": {
+        "qid": "Q96731641",
+        "label": "UN Global Compact Reports",
+        "description": "UK scientific journal",
+        "confidence": "medium"
+      },
+      "WHO": {
+        "qid": "Q49001",
+        "label": "Whoopi Goldberg",
+        "description": "American actress, comedian, author and television personality",
+        "confidence": "medium"
+      }
+    },
+    "Political_Leaning": {
+      "Conservative": {
+        "qid": "Q9626",
+        "label": "Conservative Party",
+        "description": "centre-right to right-wing political party in the United Kingdom",
+        "confidence": "medium"
+      },
+      "Conspiracy": {
+        "qid": "Q930164",
+        "label": "conspiracy",
+        "description": "secret plan or agreement for an unlawful or harmful purpose, especially with political motivation",
+        "confidence": "high"
+      },
+      "Liberal": {
+        "qid": "Q37250560",
+        "label": "Liberal",
+        "description": "family name",
+        "confidence": "high"
+      },
+      "Libertarian": {
+        "qid": "Q61055839",
+        "label": "libertarian",
+        "description": null,
+        "confidence": "high"
+      },
+      "Neutral": {
+        "qid": "Q17213676",
+        "label": "Neutral",
+        "description": "album by Anri",
+        "confidence": "high"
+      }
+    },
+    "Topic_Tags": {
+      "5G": {
+        "qid": "Q16144068",
+        "label": "5G",
+        "description": "episode of Mad Men (S1 E5)",
+        "confidence": "high"
+      },
+      "AI": {
+        "qid": "Q96184770",
+        "label": "Ai",
+        "description": "given name",
+        "confidence": "high"
+      },
+      "EV": {
+        "qid": "Q829665",
+        "label": "Eva",
+        "description": "female given name",
+        "confidence": "medium"
+      },
+      "ML": {
+        "qid": "Q912",
+        "label": "Mali",
+        "description": "country in West Africa",
+        "confidence": "medium"
+      },
+      "UBI": {
+        "qid": "Q25894750",
+        "label": "Ubi",
+        "description": "village in Yalimo Regency, Highland Papua, Indonesia",
+        "confidence": "high"
+      },
+      "awareness": {
+        "qid": "Q4338318",
+        "label": "awareness",
+        "description": "state or ability to perceive, to feel, or to be conscious of events, objects, or sensory patterns",
+        "confidence": "high"
+      },
+      "banking": {
+        "qid": "Q105515917",
+        "label": "Banking",
+        "description": "American Bankers Association journal",
+        "confidence": "high"
+      },
+      "birds": {
+        "qid": "Q126132085",
+        "label": "Birds",
+        "description": "vocal track by Claudine Longet; 1972 studio recording; cover version",
+        "confidence": "high"
+      },
+      "blackouts": {
+        "qid": "Q13439834",
+        "label": "Blackouts",
+        "description": "1978 studio album by Ashra",
+        "confidence": "high"
+      },
+      "blockchain": {
+        "qid": "Q20514253",
+        "label": "blockchain",
+        "description": "distributed data store for digital transactions",
+        "confidence": "high"
+      },
+      "carbon": {
+        "qid": "Q623",
+        "label": "carbon",
+        "description": "chemical element with symbol C and atomic number 6; common element of all known life",
+        "confidence": "high"
+      },
+      "cars": {
+        "qid": "Q1059038",
+        "label": "Cars",
+        "description": "commune in Gironde, France",
+        "confidence": "high"
+      },
+      "chemtrails": {
+        "qid": "Q5090665",
+        "label": "Chemtrails",
+        "description": "2008 single by Beck",
+        "confidence": "high"
+      },
+      "clean_energy": {
+        "qid": "Q1962383",
+        "label": "sustainable energy",
+        "description": "energy usage that meets the needs of the present without compromising the needs of future generations",
+        "confidence": "medium"
+      },
+      "climate": {
+        "qid": "Q7937",
+        "label": "climate",
+        "description": "statistics of temperature, humidity, atmospheric pressure, wind, precipitation, atmospheric particle count and other meteorological elemental measurements in a given region over long periods",
+        "confidence": "high"
+      },
+      "conservation": {
+        "qid": "Q628403",
+        "label": "conservation",
+        "description": "ethical resource use, allocation, and protection",
+        "confidence": "high"
+      },
+      "conspiracy": {
+        "qid": "Q930164",
+        "label": "conspiracy",
+        "description": "secret plan or agreement for an unlawful or harmful purpose, especially with political motivation",
+        "confidence": "high"
+      },
+      "covid": {
+        "qid": "Q84263196",
+        "label": "COVID-19",
+        "description": "contagious disease caused by SARS-CoV-2",
+        "confidence": "medium"
+      },
+      "crypto": {
+        "qid": "Q62116300",
+        "label": "Cryptococcus neoformans var. grubii H99",
+        "description": "subspecies of fungus",
+        "confidence": "medium"
+      },
+      "dance": {
+        "qid": "Q11639",
+        "label": "dance",
+        "description": "rhythmic movement of the body",
+        "confidence": "high"
+      },
+      "deepfake": {
+        "qid": "Q49473179",
+        "label": "deepfake",
+        "description": "artificial intelligence-based human image synthesis technique",
+        "confidence": "high"
+      },
+      "diet": {
+        "qid": "Q474191",
+        "label": "diet",
+        "description": "sum of food consumed by an organism",
+        "confidence": "high"
+      },
+      "diversity": {
+        "qid": "Q27722602",
+        "label": "Diversity",
+        "description": "journal",
+        "confidence": "high"
+      },
+      "documentary": {
+        "qid": "Q4164344",
+        "label": "documentary",
+        "description": "non-fiction genre",
+        "confidence": "high"
+      },
+      "drones": {
+        "qid": "Q18221034",
+        "label": "Drones",
+        "description": "2015 album by Muse",
+        "confidence": "high"
+      },
+      "economics": {
+        "qid": "Q8134",
+        "label": "economics",
+        "description": "social science that studies the production, distribution, and consumption of goods and services",
+        "confidence": "high"
+      },
+      "education": {
+        "qid": "Q8434",
+        "label": "education",
+        "description": "transmission of knowledge and skills",
+        "confidence": "high"
+      },
+      "election": {
+        "qid": "Q60390640",
+        "label": "Election",
+        "description": "1998 edition",
+        "confidence": "high"
+      },
+      "energy": {
+        "qid": "Q11379",
+        "label": "energy",
+        "description": "quantitative property of a physical system, recognizable in the performance of work and in the form of heat and light",
+        "confidence": "high"
+      },
+      "environment": {
+        "qid": "Q2249676",
+        "label": "environment",
+        "description": "surrounding of an organism or population",
+        "confidence": "high"
+      },
+      "ethics": {
+        "qid": "Q9465",
+        "label": "ethics",
+        "description": "branch of philosophy that systematizes, defends, and recommends concepts of right and wrong conduct",
+        "confidence": "high"
+      },
+      "facts": {
+        "qid": "Q55516988",
+        "label": "Facts",
+        "description": "2015 promotional single by Kanye West",
+        "confidence": "high"
+      },
+      "finance": {
+        "qid": "Q43015",
+        "label": "finance",
+        "description": "academic discipline studying businesses, financing, investments and protection of economic value",
+        "confidence": "high"
+      },
+      "flat_earth": {
+        "qid": "Q660936",
+        "label": "flat Earth",
+        "description": "archaic conception of the Earth's shape",
+        "confidence": "medium"
+      },
+      "fraud": {
+        "qid": "Q28813",
+        "label": "fraud",
+        "description": "intentional deception made for unfair or unlawful gain or damaging or depriving a victim",
+        "confidence": "high"
+      },
+      "fusion": {
+        "qid": "Q105527",
+        "label": "jazz fusion",
+        "description": "music genre that developed in the late 1960s when musicians combined jazz harmony and improvisation with rock music, funk, and rhythm and blues",
+        "confidence": "medium"
+      },
+      "future": {
+        "qid": "Q3445057",
+        "label": "Future",
+        "description": "American rapper, singer and record producer",
+        "confidence": "high"
+      },
+      "government": {
+        "qid": "Q7188",
+        "label": "government",
+        "description": "system or group of people governing an organized community, often a state",
+        "confidence": "high"
+      },
+      "grid": {
+        "qid": "Q27768150",
+        "label": "GRID",
+        "description": "database of educational and research organizations",
+        "confidence": "high"
+      },
+      "health": {
+        "qid": "Q12147",
+        "label": "health",
+        "description": "desirable level of functional or metabolic efficiency of a living being",
+        "confidence": "high"
+      },
+      "healthcare": {
+        "qid": "Q27726790",
+        "label": "Healthcare",
+        "description": "scientific journal",
+        "confidence": "high"
+      },
+      "inflation": {
+        "qid": "Q35865",
+        "label": "inflation",
+        "description": "rise in price level in an economy over time",
+        "confidence": "high"
+      },
+      "ivermectin": {
+        "qid": "Q415178",
+        "label": "ivermectin",
+        "description": "antiparasite medication",
+        "confidence": "high"
+      },
+      "jobs": {
+        "qid": "Q37461660",
+        "label": "Jobs",
+        "description": "family name",
+        "confidence": "high"
+      },
+      "masks": {
+        "qid": "Q12036011",
+        "label": "Masks",
+        "description": "1989 novel by John Vornholt",
+        "confidence": "high"
+      },
+      "media_literacy": {
+        "qid": "Q1507246",
+        "label": "media literacy",
+        "description": "encompasses the practices that allow people to access, critically evaluate, and create media",
+        "confidence": "medium"
+      },
+      "mental_health": {
+        "qid": "Q317309",
+        "label": "mental health",
+        "description": "level of psychological well-being",
+        "confidence": "medium"
+      },
+      "microchips": {
+        "qid": "Q30288036",
+        "label": "Microchips Biotech (United States)",
+        "description": "company in Lexington, United States",
+        "confidence": "medium"
+      },
+      "misinformation": {
+        "qid": "Q13579947",
+        "label": "misinformation",
+        "description": "incorrect information with or without an intention to deceive",
+        "confidence": "high"
+      },
+      "moon": {
+        "qid": "Q16877383",
+        "label": "Moon",
+        "description": "family name",
+        "confidence": "high"
+      },
+      "neutrality": {
+        "qid": "Q9049677",
+        "label": "neutrality",
+        "description": "tendency not to side in a conflict",
+        "confidence": "high"
+      },
+      "ocean": {
+        "qid": "Q71267306",
+        "label": "Ocean",
+        "description": "unisex given name",
+        "confidence": "high"
+      },
+      "personal": {
+        "qid": "Q67372736",
+        "label": "personal",
+        "description": "grammatical gender",
+        "confidence": "high"
+      },
+      "pharma": {
+        "qid": "Q12331793",
+        "label": "Pharma",
+        "description": "Danish periodical",
+        "confidence": "high"
+      },
+      "plant_based": {
+        "qid": "Q28969364",
+        "label": "plant material",
+        "description": "material derived from plants",
+        "confidence": "medium"
+      },
+      "policy": {
+        "qid": "Q1156854",
+        "label": "policy",
+        "description": "principle or protocol to guide decisions and achieve rational outcomes",
+        "confidence": "high"
+      },
+      "politics": {
+        "qid": "Q7163",
+        "label": "politics",
+        "description": "activities associated with group decisions",
+        "confidence": "high"
+      },
+      "protest": {
+        "qid": "Q273120",
+        "label": "protest",
+        "description": "expression of objection",
+        "confidence": "high"
+      },
+      "quantum": {
+        "qid": "Q7268973",
+        "label": "Quantum",
+        "description": "1982 video game",
+        "confidence": "high"
+      },
+      "radiation": {
+        "qid": "Q18335",
+        "label": "radiation",
+        "description": "waves or particles propagating through space or through a medium, carrying energy",
+        "confidence": "high"
+      },
+      "renewable": {
+        "qid": "Q12705",
+        "label": "renewable energy",
+        "description": "energy collected from renewable resources",
+        "confidence": "medium"
+      },
+      "research": {
+        "qid": "Q42240",
+        "label": "research",
+        "description": "systematic study undertaken to increase knowledge",
+        "confidence": "high"
+      },
+      "robots": {
+        "qid": "Q756238",
+        "label": "Robots",
+        "description": "2005 computer-animated science fiction comedy adventure film by Blue Sky Studios and Paramount Pictures",
+        "confidence": "high"
+      },
+      "safety": {
+        "qid": "Q10566551",
+        "label": "safety",
+        "description": "state of being secure from damage, injury, danger, or other non-desirable outcomes, or from causing them",
+        "confidence": "high"
+      },
+      "science": {
+        "qid": "Q192864",
+        "label": "Science",
+        "description": "academic journal of the American Association for the Advancement of Science",
+        "confidence": "high"
+      },
+      "security": {
+        "qid": "Q2526135",
+        "label": "security",
+        "description": "freedom from, or resilience against, potential harm caused by hostile forces, circumstances or disturbances",
+        "confidence": "high"
+      },
+      "solar": {
+        "qid": "Q29441547",
+        "label": "Solar",
+        "description": "family name",
+        "confidence": "high"
+      },
+      "space": {
+        "qid": "Q380933",
+        "label": "space",
+        "description": "blank area that separates words, sentences, syllables, or other written or printed glyphs; precise typographical rules differ according to language and context",
+        "confidence": "high"
+      },
+      "startup": {
+        "qid": "Q1504952",
+        "label": "Startup",
+        "description": "census designated place in Snohomish County, Washington, United States",
+        "confidence": "high"
+      },
+      "support": {
+        "qid": "Q1058733",
+        "label": "support",
+        "description": "point in a structure at which loads are transferred between structural elements",
+        "confidence": "high"
+      },
+      "sustainability": {
+        "qid": "Q15813953",
+        "label": "Sustainability",
+        "description": "scientific journal published by MDPI",
+        "confidence": "high"
+      },
+      "technology": {
+        "qid": "Q11016",
+        "label": "technology",
+        "description": "making, modification, usage, and knowledge of tools, machines, techniques, crafts, systems, and methods of organization, or tools and techniques so created",
+        "confidence": "high"
+      },
+      "tips": {
+        "qid": "Q37565127",
+        "label": "Tips",
+        "description": "family name",
+        "confidence": "high"
+      },
+      "vaccine": {
+        "qid": "Q7907941",
+        "label": "Vaccine",
+        "description": "scientific journal",
+        "confidence": "high"
+      },
+      "vaccines": {
+        "qid": "Q27725508",
+        "label": "Vaccines",
+        "description": "scientific journal",
+        "confidence": "high"
+      },
+      "voting": {
+        "qid": "Q189760",
+        "label": "voting",
+        "description": "method for a group such as a meeting or an electorate to make a decision or express an opinion",
+        "confidence": "high"
+      },
+      "water": {
+        "qid": "Q283",
+        "label": "water",
+        "description": "chemical compound whose molecules are formed by two hydrogen atoms and one oxygen atom",
+        "confidence": "high"
+      },
+      "weather": {
+        "qid": "Q11663",
+        "label": "weather",
+        "description": "state of the atmosphere",
+        "confidence": "high"
+      },
+      "work": {
+        "qid": "Q386724",
+        "label": "work",
+        "description": "intellectual or artistic creation",
+        "confidence": "high"
+      }
+    },
+    "Media_Type": {
+      "Image": {
+        "qid": "Q478798",
+        "label": "image",
+        "description": "artifact that depicts or records visual perception",
+        "confidence": "high"
+      },
+      "Live_Video": {
+        "qid": "Q430525",
+        "label": "concert film",
+        "description": "audiovisual recording of a concert performance",
+        "confidence": "medium"
+      },
+      "Text": {
+        "qid": "Q234460",
+        "label": "text",
+        "description": "object that can be \"read\" by reader; result of writing",
+        "confidence": "high"
+      },
+      "Video": {
+        "qid": "Q625525",
+        "label": "video",
+        "description": "HTML element",
+        "confidence": "high"
+      }
+    },
+    "Moderation_Action": {
+      "Age_Restricted": {
+        "qid": "Q72180513",
+        "label": "Age-restricted video",
+        "description": "YouTube video that has been age-restricted",
+        "confidence": "medium"
+      },
+      "Approved": {
+        "qid": "Q98282151",
+        "label": "Approved",
+        "description": "OFLC classification category",
+        "confidence": "high"
+      },
+      "Controversial": {
+        "qid": "Q18912752",
+        "label": "disputed",
+        "description": "should be used with qualifier P1480 to indicate the source explicitly stated that value is disputed among experts. For example, \"the author of this work is disputed, some say it is Plato\"",
+        "confidence": "medium"
+      },
+      "Demonetized": {
+        "qid": "Q128584436",
+        "label": "Demonetized India: An Analytical Study",
+        "description": "scholarly article",
+        "confidence": "medium"
+      },
+      "Downvoted": {
+        "qid": null,
+        "label": null,
+        "confidence": "none"
+      },
+      "Educational": {
+        "qid": "Q5341295",
+        "label": "educational organization",
+        "description": "body with an aim of education",
+        "confidence": "medium"
+      },
+      "Fact_Checked": {
+        "qid": null,
+        "label": null,
+        "confidence": "none"
+      },
+      "Featured": {
+        "qid": "Q17437796",
+        "label": "featured article badge",
+        "description": "badge being used for featured articles",
+        "confidence": "medium"
+      },
+      "Hidden": {
+        "qid": "Q37566363",
+        "label": "Hidden",
+        "description": "family name",
+        "confidence": "high"
+      },
+      "Promoted": {
+        "qid": "Q20714957",
+        "label": "Promoted",
+        "description": "2015 film",
+        "confidence": "high"
+      },
+      "Removed": {
+        "qid": "Q3932531",
+        "label": "Removed",
+        "description": "album by Billy Burke",
+        "confidence": "high"
+      },
+      "Restricted": {
+        "qid": "Q18665344",
+        "label": "R",
+        "description": "film content classification given by the Motion Picture Association",
+        "confidence": "medium"
+      },
+      "Trending": {
+        "qid": "Q123281872",
+        "label": "Trending",
+        "description": "BBC audio podcast about social media",
+        "confidence": "high"
+      },
+      "Under_Review": {
+        "qid": "Q135035687",
+        "label": "review of proof is pending",
+        "description": "there is no consensus on the validity of the available mathematical proof yet",
+        "confidence": "medium"
+      },
+      "Warning_Added": {
+        "qid": null,
+        "label": null,
+        "confidence": "none"
+      },
+      "Warning_Label": {
+        "qid": "Q10713132",
+        "label": "warning label",
+        "description": "label placed on products to warn user of risks and prevent liability of the seller",
+        "confidence": "medium"
+      }
+    }
+  }
+}
