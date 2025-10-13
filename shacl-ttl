@@ -1,0 +1,143 @@
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix my: <http://example.org/my#> .
+@prefix wd: <http://www.wikidata.org/entity/> .
+
+#################################################################
+# Shape for a Social Media Posting
+#################################################################
+
+schema:SocialMediaPostingShape
+    a sh:NodeShape ;
+    sh:targetClass schema:SocialMediaPosting ;
+
+    # identifier
+    sh:property [
+        sh:path schema:identifier ;
+        sh:datatype xsd:string ;
+        sh:minCount 1 ;
+    ] ;
+
+    # publication date
+    sh:property [
+        sh:path schema:datePublished ;
+        sh:datatype xsd:dateTime ;
+        sh:minCount 1 ;
+    ] ;
+
+    # content text
+    sh:property [
+        sh:path schema:text ;
+        sh:datatype xsd:string ;
+        sh:minCount 1 ;
+    ] ;
+
+    # language
+    sh:property [
+        sh:path schema:inLanguage ;
+        sh:nodeKind sh:IRI ;  # since it's wd:Q1860
+    ] ;
+
+    # location
+    sh:property [
+        sh:path schema:contentLocation ;
+        sh:nodeKind sh:IRI ;
+    ] ;
+
+    # content rating (e.g. Verified, etc.)
+    sh:property [
+        sh:path schema:contentRating ;
+        sh:datatype xsd:string ;
+    ] ;
+
+    # about topics (multiple wd: entities)
+    sh:property [
+        sh:path schema:about ;
+        sh:nodeKind sh:IRI ;
+        sh:minCount 1 ;
+    ] ;
+
+    # platform (custom field)
+    sh:property [
+        sh:path my:platform ;
+        sh:datatype xsd:string ;   # could also be IRI if you use wd:Qxxxx
+    ] ;
+
+    # engagement score
+    sh:property [
+        sh:path my:engagement ;
+        sh:datatype xsd:float ;
+    ] ;
+
+    # misinformation flag
+    sh:property [
+        sh:path my:misinformationFlag ;
+        sh:datatype xsd:boolean ;
+    ] ;
+
+    # fact check source
+    sh:property [
+        sh:path my:factCheckSource ;
+        sh:nodeKind sh:IRI ;
+    ] ;
+
+    # sentiment & toxicity scores
+    sh:property [
+        sh:path my:sentimentScore ;
+        sh:datatype xsd:float ;
+    ] ;
+    sh:property [
+        sh:path my:toxicityScore ;
+        sh:datatype xsd:float ;
+    ] ;
+
+    # political leaning
+    sh:property [
+        sh:path my:politicalLeaning ;
+        sh:datatype xsd:string ;
+    ] ;
+
+    # external link
+    sh:property [
+        sh:path my:hasExternalLink ;
+        sh:datatype xsd:boolean ;
+    ] ;
+
+    # viral score
+    sh:property [
+        sh:path my:viralScore ;
+        sh:datatype xsd:float ;
+    ] ;
+
+    # moderation action
+    sh:property [
+        sh:path my:moderationAction ;
+        sh:datatype xsd:string ;
+    ] ;
+
+    # interaction statistics (list of schema:InteractionCounter)
+    sh:property [
+        sh:path schema:interactionStatistic ;
+        sh:class schema:InteractionCounter ;
+        sh:minCount 1 ;
+    ] .
+
+#################################################################
+# Shape for InteractionCounter
+#################################################################
+
+schema:InteractionCounterShape
+    a sh:NodeShape ;
+    sh:targetClass schema:InteractionCounter ;
+
+    sh:property [
+        sh:path schema:interactionType ;
+        sh:datatype xsd:string ;  # e.g., schema:LikeAction
+        sh:minCount 1 ;
+    ] ;
+    sh:property [
+        sh:path schema:userInteractionCount ;
+        sh:datatype xsd:integer ;
+        sh:minCount 1 ;
+    ] .
