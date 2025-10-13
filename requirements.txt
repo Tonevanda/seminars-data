@@ -2,3 +2,5 @@ pandas
 requests
 tqdm
 pywikibot
+rdflib
+rdflib-jsonld
