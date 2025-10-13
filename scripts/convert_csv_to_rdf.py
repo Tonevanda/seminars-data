@@ -86,8 +86,7 @@ def main():
     context = {
         "schema": "http://schema.org/",
         "wd": "http://www.wikidata.org/entity/",
-        "xsd": "http://www.w3.org/2001/XMLSchema#",
-        "my": "http://example.org/ontology/"
+        "xsd": "http://www.w3.org/2001/XMLSchema#"
     }
 
     graph = []
