@@ -38,7 +38,10 @@ Example structure of JSON-LD object representing a social media post
     ],
 
     "schema:identifier": "ig_024",
-    "schema:datePublished": { "@type": "xsd:dateTime", "@value": "2024-08-14T16:33:27Z" },
+    "schema:datePublished": { 
+      "@type": "xsd:dateTime", 
+      "@value": "2024-08-14T16:33:27Z" 
+    },
     "my:platform": "Instagram",
     "schema:interactionStatistic": [
       {

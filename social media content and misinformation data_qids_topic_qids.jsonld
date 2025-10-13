@@ -1,0 +1,1908 @@
+{
+  "@context": {
+    "schema": "http://schema.org/",
+    "wd": "http://www.wikidata.org/entity/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "my": "http://example.org/ontology/"
+  },
+  "@graph": [
+    {
+      "@id": "https://www.kaggle.com/datasets/imaadmahmood/social-media-and-misinformation-dataset-2024/social%20media%20content%20and%20misinformation%20data_qids_topic_qids/tw_001",
+      "@type": "http://schema.org/SocialMediaPosting",
+      "schema:about": [
+        {
+          "@id": "wd:Q7937"
+        },
+        {
+          "@id": "wd:Q192864"
+        },
+        {
+          "@id": "wd:Q2249676"
+        }
+      ],
+      "schema:identifier": "tw_001",
+      "schema:datePublished": {
+        "@type": "xsd:dateTime",
+        "@value": "2024-08-13T09:15:23Z"
+      },
+      "my:platform": "Q1390577",
+      "schema:interactionStatistic": [
+        {
+          "@type": "schema:InteractionCounter",
+          "schema:interactionType": "schema:LikeAction",
+          "schema:userInteractionCount": 234
+        },
+        {
+          "@type": "schema:InteractionCounter",
+          "schema:interactionType": "schema:CommentAction",
+          "schema:userInteractionCount": 156
+        },
+        {
+          "@type": "schema:InteractionCounter",
+          "schema:interactionType": "schema:ShareAction",
+          "schema:userInteractionCount": 89
+        },
+        {
+          "@type": "schema:InteractionCounter",
+          "schema:interactionType": "schema:FollowAction",
+          "schema:userInteractionCount": 15420
+        }
+      ],
+      "schema:text": "Climate change is just a natural cycle - the Earth has always warmed and cooled",
+      "schema:inLanguage": "wd:Q1860",
+      "schema:contentLocation": "wd:Q30",
+      "schema:contentRating": "Verified",
+      "my:engagement": 0.72,
+      "my:misinformationFlag": {
+        "@type": "xsd:boolean",
+        "@value": true
+      },
+      "my:factCheckSource": {
+        "@id": "wd:Q130879"
+      },
+      "my:sentimentScore": {
+        "@type": "xsd:float",
+        "@value": "0.23"
+      },
+      "my:toxicityScore": {
+        "@type": "xsd:float",
+        "@value": "0.15"
+      },
+      "my:politicalLeaning": "Conservative",
+      "my:hasExternalLink": {
+        "@type": "xsd:boolean",
+        "@value": false
+      },
+      "my:viralScore": {
+        "@type": "xsd:float",
+        "@value": "0.68"
+      },
+      "my:moderationAction": "Warning_Label"
+    },
+    {
+      "@id": "https://www.kaggle.com/datasets/imaadmahmood/social-media-and-misinformation-dataset-2024/social%20media%20content%20and%20misinformation%20data_qids_topic_qids/fb_002",
+      "@type": "http://schema.org/SocialMediaPosting",
+      "schema:about": [
+        {
+          "@id": "wd:Q7907941"
+        },
+        {
+          "@id": "wd:Q12147"
+        },
+        {
+          "@id": "wd:Q84263196"
+        }
+      ],
+      "schema:identifier": "fb_002",
+      "schema:datePublished": {
+        "@type": "xsd:dateTime",
+        "@value": "2024-08-13T11:32:45Z"
+      },
+      "my:platform": "Q355",
+      "schema:interactionStatistic": [
+        {
+          "@type": "schema:InteractionCounter",
+          "schema:interactionType": "schema:LikeAction",
+          "schema:userInteractionCount": 567
+        },
+        {
+          "@type": "schema:InteractionCounter",
+          "schema:interactionType": "schema:CommentAction",
+          "schema:userInteractionCount": 89
+        },
+        {
+          "@type": "schema:InteractionCounter",
+          "schema:interactionType": "schema:ShareAction",
+          "schema:userInteractionCount": 234
+        },
+        {
+          "@type": "schema:InteractionCounter",
+          "schema:interactionType": "schema:FollowAction",
+          "schema:userInteractionCount": 8934
+        }
+      ],
+      "schema:text": "New vaccine study shows 99% effectiveness against latest variant",
+      "schema:inLanguage": "wd:Q1860",
+      "schema:contentLocation": "wd:Q145",
+      "schema:contentRating": "Unverified",
+      "my:engagement": 0.89,
+      "my:misinformationFlag": {
+        "@type": "xsd:boolean",
+        "@value": false
+      },
+      "my:factCheckSource": {
+        "@id": "wd:Q918396"
+      },
+      "my:sentimentScore": {
+        "@type": "xsd:float",
+        "@value": "0.78"
+      },
+      "my:toxicityScore": {
+        "@type": "xsd:float",
+        "@value": "0.05"
+      },
+      "my:politicalLeaning": "Neutral",
+      "my:hasExternalLink": {
+        "@type": "xsd:boolean",
+        "@value": true
+      },
+      "my:viralScore": {
+        "@type": "xsd:float",
+        "@value": "0.85"
+      },
+      "my:moderationAction": "Approved"
+    },
+    {
+      "@id": "https://www.kaggle.com/datasets/imaadmahmood/social-media-and-misinformation-dataset-2024/social%20media%20content%20and%20misinformation%20data_qids_topic_qids/yt_004",
+      "@type": "http://schema.org/SocialMediaPosting",
+      "schema:about": [
+        {
+          "@id": "wd:Q60390640"
+        },
+        {
+          "@id": "wd:Q7163"
+        },
+        {
+          "@id": "wd:Q2526135"
+        }
+      ],
+      "schema:identifier": "yt_004",
+      "schema:datePublished": {
+        "@type": "xsd:dateTime",
+        "@value": "2024-08-13T16:45:33Z"
+      },
+      "my:platform": "Q866",
+      "schema:interactionStatistic": [
+        {
+          "@type": "schema:InteractionCounter",
+          "schema:interactionType": "schema:LikeAction",
+          "schema:userInteractionCount": 2345
+        },
+        {
+          "@type": "schema:InteractionCounter",
+          "schema:interactionType": "schema:CommentAction",
+          "schema:userInteractionCount": 890
+        },
+        {
+          "@type": "schema:InteractionCounter",
+          "schema:interactionType": "schema:ShareAction",
+          "schema:userInteractionCount": 567
+        },
+        {
+          "@type": "schema:InteractionCounter",
+          "schema:interactionType": "schema:FollowAction",
+          "schema:userInteractionCount": 567890
+        }
+      ],
+      "schema:text": "Documentary: The Real Truth About Election Security",
+      "schema:inLanguage": "wd:Q1860",
+      "schema:contentLocation": "wd:Q30",
+      "schema:contentRating": "Verified",
+      "my:engagement": 0.45,
+      "my:misinformationFlag": {
+        "@type": "xsd:boolean",
+        "@value": true
+      },
+      "my:factCheckSource": {
+        "@id": "wd:Q4653479"
+      },
+      "my:sentimentScore": {
+        "@type": "xsd:float",
+        "@value": "-0.12"
+      },
+      "my:toxicityScore": {
+        "@type": "xsd:float",
+        "@value": "0.67"
+      },
+      "my:politicalLeaning": "Conservative",
+      "my:hasExternalLink": {
+        "@type": "xsd:boolean",
+        "@value": true
+      },
+      "my:viralScore": {
+        "@type": "xsd:float",
+        "@value": "0.78"
+      },
+      "my:moderationAction": "Demonetized"
+    },
+    {
+      "@id": "https://www.kaggle.com/datasets/imaadmahmood/social-media-and-misinformation-dataset-2024/social%20media%20content%20and%20misinformation%20data_qids_topic_qids/tk_005",
+      "@type": "http://schema.org/SocialMediaPosting",
+      "schema:about": [
+        {
+          "@id": "wd:Q16144068"
+        },
+        {
+          "@id": "wd:Q12147"
+        },
+        {
+          "@id": "wd:Q930164"
+        }
+      ],
+      "schema:identifier": "tk_005",
+      "schema:datePublished": {
+        "@type": "xsd:dateTime",
+        "@value": "2024-08-13T18:22:11Z"
+      },
+      "my:platform": "Q48938223",
+      "schema:interactionStatistic": [
+        {
+          "@type": "schema:InteractionCounter",
+          "schema:interactionType": "schema:LikeAction",
+          "schema:userInteractionCount": 890
+        },
+        {
+          "@type": "schema:InteractionCounter",
+          "schema:interactionType": "schema:CommentAction",
+          "schema:userInteractionCount": 234
+        },
+        {
+          "@type": "schema:InteractionCounter",
+          "schema:interactionType": "schema:ShareAction",
+          "schema:userInteractionCount": 345
+        },
+        {
+          "@type": "schema:InteractionCounter",
+          "schema:interactionType": "schema:FollowAction",
+          "schema:userInteractionCount": 123456
+        }
+      ],
+      "schema:text": "5G towers cause health problems - here's the proof!",
+      "schema:inLanguage": "wd:Q1860",
+      "schema:contentLocation": "wd:Q408",
+      "schema:contentRating": "Unverified",
+      "my:engagement": 0.34,
+      "my:misinformationFlag": {
+        "@type": "xsd:boolean",
+        "@value": true
+      },
+      "my:factCheckSource": {
+        "@id": "wd:Q7817"
+      },
+      "my:sentimentScore": {
+        "@type": "xsd:float",
+        "@value": "-0.45"
+      },
+      "my:toxicityScore": {
+        "@type": "xsd:float",
+        "@value": "0.78"
+      },
+      "my:politicalLeaning": "Conspiracy",
+      "my:hasExternalLink": {
+        "@type": "xsd:boolean",
+        "@value": true
+      },
+      "my:viralScore": {
+        "@type": "xsd:float",
+        "@value": "0.56"
+      },
+      "my:moderationAction": "Removed"
+    },
+    {
+      "@id": "https://www.kaggle.com/datasets/imaadmahmood/social-media-and-misinformation-dataset-2024/social%20media%20content%20and%20misinformation%20data_qids_topic_qids/rd_007",
+      "@type": "http://schema.org/SocialMediaPosting",
+      "schema:about": [
+        {
+          "@id": "wd:Q16877383"
+        },
+        {
+          "@id": "wd:Q380933"
+        },
+        {
+          "@id": "wd:Q930164"
+        }
+      ],
+      "schema:identifier": "rd_007",
+      "schema:datePublished": {
+        "@type": "xsd:dateTime",
+        "@value": "2024-08-13T20:33:17Z"
+      },
+      "my:platform": "Q1136",
+      "schema:interactionStatistic": [
+        {
+          "@type": "schema:InteractionCounter",
+          "schema:interactionType": "schema:LikeAction",
+          "schema:userInteractionCount": 45
+        },
+        {
+          "@type": "schema:InteractionCounter",
+          "schema:interactionType": "schema:CommentAction",
+          "schema:userInteractionCount": 89
+        },
+        {
+          "@type": "schema:InteractionCounter",
+          "schema:interactionType": "schema:ShareAction",
+          "schema:userInteractionCount": 12
+        },
+        {
+          "@type": "schema:InteractionCounter",
+          "schema:interactionType": "schema:FollowAction",
+          "schema:userInteractionCount": 234
+        }
+      ],
+      "schema:text": "The moonlanding was definitely fake - here's why the shadows don't match",
+      "schema:inLanguage": "wd:Q1860",
+      "schema:contentLocation": "wd:Q30",
+      "schema:contentRating": "Unverified",
+      "my:engagement": 0.23,
+      "my:misinformationFlag": {
+        "@type": "xsd:boolean",
+        "@value": true
+      },
+      "my:factCheckSource": {
+        "@id": "wd:Q23548"
+      },
+      "my:sentimentScore": {
+        "@type": "xsd:float",
+        "@value": "-0.67"
+      },
+      "my:toxicityScore": {
+        "@type": "xsd:float",
+        "@value": "0.45"
+      },
+      "my:politicalLeaning": "Conspiracy",
+      "my:hasExternalLink": {
+        "@type": "xsd:boolean",
+        "@value": false
+      },
+      "my:viralScore": {
+        "@type": "xsd:float",
+        "@value": "0.29"
+      },
+      "my:moderationAction": "Downvoted"
+    },
+    {
+      "@id": "https://www.kaggle.com/datasets/imaadmahmood/social-media-and-misinformation-dataset-2024/social%20media%20content%20and%20misinformation%20data_qids_topic_qids/tw_008",
+      "@type": "http://schema.org/SocialMediaPosting",
+      "schema:about": [
+        {
+          "@id": "wd:Q117454372"
+        },
+        {
+          "@id": "wd:Q11379"
+        },
+        {
+          "@id": "wd:Q29441547"
+        }
+      ],
+      "schema:identifier": "tw_008",
+      "schema:datePublished": {
+        "@type": "xsd:dateTime",
+        "@value": "2024-08-13T07:45:22Z"
+      },
+      "my:platform": "Q1390577",
+      "schema:interactionStatistic": [
+        {
+          "@type": "schema:InteractionCounter",
+          "schema:interactionType": "schema:LikeAction",
+          "schema:userInteractionCount": 1567
+        },
+        {
+          "@type": "schema:InteractionCounter",
+          "schema:interactionType": "schema:CommentAction",
+          "schema:userInteractionCount": 234
+        },
+        {
+          "@type": "schema:InteractionCounter",
+          "schema:interactionType": "schema:ShareAction",
+          "schema:userInteractionCount": 678
+        },
+        {
+          "@type": "schema:InteractionCounter",
+          "schema:interactionType": "schema:FollowAction",
+          "schema:userInteractionCount": 89234
+        }
+      ],
+      "schema:text": "Breaking: New renewable energy breakthrough could revolutionize solar power",
+      "schema:inLanguage": "wd:Q1860",
+      "schema:contentLocation": "wd:Q17",
+      "schema:contentRating": "Verified",
+      "my:engagement": 0.91,
+      "my:misinformationFlag": {
+        "@type": "xsd:boolean",
+        "@value": false
+      },
+      "my:factCheckSource": {
+        "@id": "wd:Q27723996"
+      },
+      "my:sentimentScore": {
+        "@type": "xsd:float",
+        "@value": "0.84"
+      },
+      "my:toxicityScore": {
+        "@type": "xsd:float",
+        "@value": "0.03"
+      },
+      "my:politicalLeaning": "Liberal",
+      "my:hasExternalLink": {
+        "@type": "xsd:boolean",
+        "@value": true
+      },
+      "my:viralScore": {
+        "@type": "xsd:float",
+        "@value": "0.91"
+      },
+      "my:moderationAction": "Promoted"
+    },
+    {
+      "@id": "https://www.kaggle.com/datasets/imaadmahmood/social-media-and-misinformation-dataset-2024/social%20media%20content%20and%20misinformation%20data_qids_topic_qids/fb_009",
+      "@type": "http://schema.org/SocialMediaPosting",
+      "schema:about": [
+        {
+          "@id": "wd:Q12036011"
+        },
+        {
+          "@id": "wd:Q7188"
+        },
+        {
+          "@id": "wd:Q930164"
+        }
+      ],
+      "schema:identifier": "fb_009",
+      "schema:datePublished": {
+        "@type": "xsd:dateTime",
+        "@value": "2024-08-13T13:17:55Z"
+      },
+      "my:platform": "Q355",
+      "schema:interactionStatistic": [
+        {
+          "@type": "schema:InteractionCounter",
+          "schema:interactionType": "schema:LikeAction",
+          "schema:userInteractionCount": 67
+        },
+        {
+          "@type": "schema:InteractionCounter",
+          "schema:interactionType": "schema:CommentAction",
+          "schema:userInteractionCount": 145
+        },
+        {
+          "@type": "schema:InteractionCounter",
+          "schema:interactionType": "schema:ShareAction",
+          "schema:userInteractionCount": 23
+        },
+        {
+          "@type": "schema:InteractionCounter",
+          "schema:interactionType": "schema:FollowAction",
+          "schema:userInteractionCount": 12345
+        }
+      ],
+      "schema:text": "Masks don't work against viruses - government lies to control us",
+      "schema:inLanguage": "wd:Q1860",
+      "schema:contentLocation": "wd:Q155",
+      "schema:contentRating": "Unverified",
+      "my:engagement": 0.12,
+      "my:misinformationFlag": {
+        "@type": "xsd:boolean",
+        "@value": true
+      },
+      "my:factCheckSource": {
+        "@id": "wd:Q583725"
+      },
+      "my:sentimentScore": {
+        "@type": "xsd:float",
+        "@value": "-0.78"
+      },
+      "my:toxicityScore": {
+        "@type": "xsd:float",
+        "@value": "0.89"
+      },
+      "my:politicalLeaning": "Conservative",
+      "my:hasExternalLink": {
+        "@type": "xsd:boolean",
+        "@value": false
+      },
+      "my:viralScore": {
+        "@type": "xsd:float",
+        "@value": "0.67"
+      },
+      "my:moderationAction": "Restricted"
+    },
+    {
+      "@id": "https://www.kaggle.com/datasets/imaadmahmood/social-media-and-misinformation-dataset-2024/social%20media%20content%20and%20misinformation%20data_qids_topic_qids/tw_013",
+      "@type": "http://schema.org/SocialMediaPosting",
+      "schema:about": [
+        {
+          "@id": "wd:Q829665"
+        },
+        {
+          "@id": "wd:Q2249676"
+        },
+        {
+          "@id": "wd:Q1059038"
+        }
+      ],
+      "schema:identifier": "tw_013",
+      "schema:datePublished": {
+        "@type": "xsd:dateTime",
+        "@value": "2024-08-13T08:33:19Z"
+      },
+      "my:platform": "Q1390577",
+      "schema:interactionStatistic": [
+        {
+          "@type": "schema:InteractionCounter",
+          "schema:interactionType": "schema:LikeAction",
+          "schema:userInteractionCount": 234
+        },
+        {
+          "@type": "schema:InteractionCounter",
+          "schema:interactionType": "schema:CommentAction",
+          "schema:userInteractionCount": 567
+        },
+        {
+          "@type": "schema:InteractionCounter",
+          "schema:interactionType": "schema:ShareAction",
+          "schema:userInteractionCount": 89
+        },
+        {
+          "@type": "schema:InteractionCounter",
+          "schema:interactionType": "schema:FollowAction",
+          "schema:userInteractionCount": 567234
+        }
+      ],
+      "schema:text": "Electric vehicles are actually worse for environment than gas cars",
+      "schema:inLanguage": "wd:Q1860",
+      "schema:contentLocation": "wd:Q30",
+      "schema:contentRating": "Unverified",
+      "my:engagement": 0.34,
+      "my:misinformationFlag": {
+        "@type": "xsd:boolean",
+        "@value": true
+      },
+      "my:factCheckSource": {
+        "@id": "wd:Q3244038"
+      },
+      "my:sentimentScore": {
+        "@type": "xsd:float",
+        "@value": "-0.23"
+      },
+      "my:toxicityScore": {
+        "@type": "xsd:float",
+        "@value": "0.56"
+      },
+      "my:politicalLeaning": "Conservative",
+      "my:hasExternalLink": {
+        "@type": "xsd:boolean",
+        "@value": true
+      },
+      "my:viralScore": {
+        "@type": "xsd:float",
+        "@value": "0.45"
+      },
+      "my:moderationAction": "Fact_Checked"
+    },
+    {
+      "@id": "https://www.kaggle.com/datasets/imaadmahmood/social-media-and-misinformation-dataset-2024/social%20media%20content%20and%20misinformation%20data_qids_topic_qids/fb_016",
+      "@type": "http://schema.org/SocialMediaPosting",
+      "schema:about": [
+        {
+          "@id": "wd:Q71267306"
+        },
+        {
+          "@id": "wd:Q628403"
+        },
+        {
+          "@id": "wd:Q4164344"
+        }
+      ],
+      "schema:identifier": "fb_016",
+      "schema:datePublished": {
+        "@type": "xsd:dateTime",
+        "@value": "2024-08-13T09:55:17Z"
+      },
+      "my:platform": "Q355",
+      "schema:interactionStatistic": [
+        {
+          "@type": "schema:InteractionCounter",
+          "schema:interactionType": "schema:LikeAction",
+          "schema:userInteractionCount": 678
+        },
+        {
+          "@type": "schema:InteractionCounter",
+          "schema:interactionType": "schema:CommentAction",
+          "schema:userInteractionCount": 89
+        },
+        {
+          "@type": "schema:InteractionCounter",
+          "schema:interactionType": "schema:ShareAction",
+          "schema:userInteractionCount": 145
+        },
+        {
+          "@type": "schema:InteractionCounter",
+          "schema:interactionType": "schema:FollowAction",
+          "schema:userInteractionCount": 34567
+        }
+      ],
+      "schema:text": "Sharing this amazing documentary about ocean conservation efforts",
+      "schema:inLanguage": "wd:Q1860",
+      "schema:contentLocation": "wd:Q16",
+      "schema:contentRating": "Verified",
+      "my:engagement": 0.86,
+      "my:misinformationFlag": {
+        "@type": "xsd:boolean",
+        "@value": false
+      },
+      "my:factCheckSource": {
+        "@id": "wd:Q5973845"
+      },
+      "my:sentimentScore": {
+        "@type": "xsd:float",
+        "@value": "0.83"
+      },
+      "my:toxicityScore": {
+        "@type": "xsd:float",
+        "@value": "0.03"
+      },
+      "my:politicalLeaning": "Liberal",
+      "my:hasExternalLink": {
+        "@type": "xsd:boolean",
+        "@value": true
+      },
+      "my:viralScore": {
+        "@type": "xsd:float",
+        "@value": "0.61"
+      },
+      "my:moderationAction": "Approved"
+    },
+    {
+      "@id": "https://www.kaggle.com/datasets/imaadmahmood/social-media-and-misinformation-dataset-2024/social%20media%20content%20and%20misinformation%20data_qids_topic_qids/ig_017",
+      "@type": "http://schema.org/SocialMediaPosting",
+      "schema:about": [
+        {
+          "@id": "wd:Q117454372"
+        },
+        {
+          "@id": "wd:Q11379"
+        },
+        {
+          "@id": "wd:Q55516988"
+        }
+      ],
+      "schema:identifier": "ig_017",
+      "schema:datePublished": {
+        "@type": "xsd:dateTime",
+        "@value": "2024-08-14T06:22:14Z"
+      },
+      "my:platform": "Q209330",
+      "schema:interactionStatistic": [
+        {
+          "@type": "schema:InteractionCounter",
+          "schema:interactionType": "schema:LikeAction",
+          "schema:userInteractionCount": 2345
+        },
+        {
+          "@type": "schema:InteractionCounter",
+          "schema:interactionType": "schema:CommentAction",
+          "schema:userInteractionCount": 234
+        },
+        {
+          "@type": "schema:InteractionCounter",
+          "schema:interactionType": "schema:ShareAction",
+          "schema:userInteractionCount": 456
+        },
+        {
+          "@type": "schema:InteractionCounter",
+          "schema:interactionType": "schema:FollowAction",
+          "schema:userInteractionCount": 156789
+        }
+      ],
+      "schema:text": "Debunking common myths about renewable energy with actual data",
+      "schema:inLanguage": "wd:Q1860",
+      "schema:contentLocation": "wd:Q55",
+      "schema:contentRating": "Verified",
+      "my:engagement": 0.79,
+      "my:misinformationFlag": {
+        "@type": "xsd:boolean",
+        "@value": false
+      },
+      "my:factCheckSource": {
+        "@id": "wd:Q826700"
+      },
+      "my:sentimentScore": {
+        "@type": "xsd:float",
+        "@value": "0.74"
+      },
+      "my:toxicityScore": {
+        "@type": "xsd:float",
+        "@value": "0.08"
+      },
+      "my:politicalLeaning": "Liberal",
+      "my:hasExternalLink": {
+        "@type": "xsd:boolean",
+        "@value": true
+      },
+      "my:viralScore": {
+        "@type": "xsd:float",
+        "@value": "0.73"
+      },
+      "my:moderationAction": "Approved"
+    },
+    {
+      "@id": "https://www.kaggle.com/datasets/imaadmahmood/social-media-and-misinformation-dataset-2024/social%20media%20content%20and%20misinformation%20data_qids_topic_qids/tw_018",
+      "@type": "http://schema.org/SocialMediaPosting",
+      "schema:about": [
+        {
+          "@id": "wd:Q415178"
+        },
+        {
+          "@id": "wd:Q84263196"
+        },
+        {
+          "@id": "wd:Q12331793"
+        }
+      ],
+      "schema:identifier": "tw_018",
+      "schema:datePublished": {
+        "@type": "xsd:dateTime",
+        "@value": "2024-08-14T11:17:42Z"
+      },
+      "my:platform": "Q1390577",
+      "schema:interactionStatistic": [
+        {
+          "@type": "schema:InteractionCounter",
+          "schema:interactionType": "schema:LikeAction",
+          "schema:userInteractionCount": 89
+        },
+        {
+          "@type": "schema:InteractionCounter",
+          "schema:interactionType": "schema:CommentAction",
+          "schema:userInteractionCount": 456
+        },
+        {
+          "@type": "schema:InteractionCounter",
+          "schema:interactionType": "schema:ShareAction",
+          "schema:userInteractionCount": 34
+        },
+        {
+          "@type": "schema:InteractionCounter",
+          "schema:interactionType": "schema:FollowAction",
+          "schema:userInteractionCount": 45123
+        }
+      ],
+      "schema:text": "Ivermectin cures COVID better than any vaccine - big pharma doesn't want you to know",
+      "schema:inLanguage": "wd:Q1860",
+      "schema:contentLocation": "wd:Q30",
+      "schema:contentRating": "Unverified",
+      "my:engagement": 0.15,
+      "my:misinformationFlag": {
+        "@type": "xsd:boolean",
+        "@value": true
+      },
+      "my:factCheckSource": {
+        "@id": "wd:Q5425269"
+      },
+      "my:sentimentScore": {
+        "@type": "xsd:float",
+        "@value": "-0.56"
+      },
+      "my:toxicityScore": {
+        "@type": "xsd:float",
+        "@value": "0.82"
+      },
+      "my:politicalLeaning": "Conservative",
+      "my:hasExternalLink": {
+        "@type": "xsd:boolean",
+        "@value": false
+      },
+      "my:viralScore": {
+        "@type": "xsd:float",
+        "@value": "0.69"
+      },
+      "my:moderationAction": "Removed"
+    },
+    {
+      "@id": "https://www.kaggle.com/datasets/imaadmahmood/social-media-and-misinformation-dataset-2024/social%20media%20content%20and%20misinformation%20data_qids_topic_qids/yt_019",
+      "@type": "http://schema.org/SocialMediaPosting",
+      "schema:about": [
+        {
+          "@id": "wd:Q912"
+        },
+        {
+          "@id": "wd:Q8434"
+        },
+        {
+          "@id": "wd:Q11016"
+        }
+      ],
+      "schema:identifier": "yt_019",
+      "schema:datePublished": {
+        "@type": "xsd:dateTime",
+        "@value": "2024-08-14T14:33:28Z"
+      },
+      "my:platform": "Q866",
+      "schema:interactionStatistic": [
+        {
+          "@type": "schema:InteractionCounter",
+          "schema:interactionType": "schema:LikeAction",
+          "schema:userInteractionCount": 5678
+        },
+        {
+          "@type": "schema:InteractionCounter",
+          "schema:interactionType": "schema:CommentAction",
+          "schema:userInteractionCount": 345
+        },
+        {
+          "@type": "schema:InteractionCounter",
+          "schema:interactionType": "schema:ShareAction",
+          "schema:userInteractionCount": 1234
+        },
+        {
+          "@type": "schema:InteractionCounter",
+          "schema:interactionType": "schema:FollowAction",
+          "schema:userInteractionCount": 234567
+        }
+      ],
+      "schema:text": "Quick explanation of how machine learning actually works",
+      "schema:inLanguage": "wd:Q1860",
+      "schema:contentLocation": "wd:Q668",
+      "schema:contentRating": "Verified",
+      "my:engagement": 0.91,
+      "my:misinformationFlag": {
+        "@type": "xsd:boolean",
+        "@value": false
+      },
+      "my:factCheckSource": {
+        "@id": "wd:Q334661"
+      },
+      "my:sentimentScore": {
+        "@type": "xsd:float",
+        "@value": "0.88"
+      },
+      "my:toxicityScore": {
+        "@type": "xsd:float",
+        "@value": "0.02"
+      },
+      "my:politicalLeaning": "Neutral",
+      "my:hasExternalLink": {
+        "@type": "xsd:boolean",
+        "@value": false
+      },
+      "my:viralScore": {
+        "@type": "xsd:float",
+        "@value": "0.84"
+      },
+      "my:moderationAction": "Approved"
+    },
+    {
+      "@id": "https://www.kaggle.com/datasets/imaadmahmood/social-media-and-misinformation-dataset-2024/social%20media%20content%20and%20misinformation%20data_qids_topic_qids/tk_020",
+      "@type": "http://schema.org/SocialMediaPosting",
+      "schema:about": [
+        {
+          "@id": "wd:Q126132085"
+        },
+        {
+          "@id": "wd:Q7188"
+        },
+        {
+          "@id": "wd:Q18221034"
+        }
+      ],
+      "schema:identifier": "tk_020",
+      "schema:datePublished": {
+        "@type": "xsd:dateTime",
+        "@value": "2024-08-14T17:45:55Z"
+      },
+      "my:platform": "Q48938223",
+      "schema:interactionStatistic": [
+        {
+          "@type": "schema:InteractionCounter",
+          "schema:interactionType": "schema:LikeAction",
+          "schema:userInteractionCount": 456
+        },
+        {
+          "@type": "schema:InteractionCounter",
+          "schema:interactionType": "schema:CommentAction",
+          "schema:userInteractionCount": 789
+        },
+        {
+          "@type": "schema:InteractionCounter",
+          "schema:interactionType": "schema:ShareAction",
+          "schema:userInteractionCount": 123
+        },
+        {
+          "@type": "schema:InteractionCounter",
+          "schema:interactionType": "schema:FollowAction",
+          "schema:userInteractionCount": 89012
+        }
+      ],
+      "schema:text": "Conspiracy theory about birds not being real - they're government drones!",
+      "schema:inLanguage": "wd:Q1860",
+      "schema:contentLocation": "wd:Q30",
+      "schema:contentRating": "Unverified",
+      "my:engagement": 0.25,
+      "my:misinformationFlag": {
+        "@type": "xsd:boolean",
+        "@value": true
+      },
+      "my:factCheckSource": {
+        "@id": "wd:Q1646000"
+      },
+      "my:sentimentScore": {
+        "@type": "xsd:float",
+        "@value": "-0.45"
+      },
+      "my:toxicityScore": {
+        "@type": "xsd:float",
+        "@value": "0.71"
+      },
+      "my:politicalLeaning": "Conspiracy",
+      "my:hasExternalLink": {
+        "@type": "xsd:boolean",
+        "@value": false
+      },
+      "my:viralScore": {
+        "@type": "xsd:float",
+        "@value": "0.58"
+      },
+      "my:moderationAction": "Warning_Added"
+    },
+    {
+      "@id": "https://www.kaggle.com/datasets/imaadmahmood/social-media-and-misinformation-dataset-2024/social%20media%20content%20and%20misinformation%20data_qids_topic_qids/ln_021",
+      "@type": "http://schema.org/SocialMediaPosting",
+      "schema:about": [
+        {
+          "@id": "wd:Q96184770"
+        },
+        {
+          "@id": "wd:Q37461660"
+        },
+        {
+          "@id": "wd:Q3445057"
+        },
+        {
+          "@id": "wd:Q386724"
+        }
+      ],
+      "schema:identifier": "ln_021",
+      "schema:datePublished": {
+        "@type": "xsd:dateTime",
+        "@value": "2024-08-14T09:12:33Z"
+      },
+      "my:platform": "Q213660",
+      "schema:interactionStatistic": [
+        {
+          "@type": "schema:InteractionCounter",
+          "schema:interactionType": "schema:LikeAction",
+          "schema:userInteractionCount": 1234
+        },
+        {
+          "@type": "schema:InteractionCounter",
+          "schema:interactionType": "schema:CommentAction",
+          "schema:userInteractionCount": 156
+        },
+        {
+          "@type": "schema:InteractionCounter",
+          "schema:interactionType": "schema:ShareAction",
+          "schema:userInteractionCount": 234
+        },
+        {
+          "@type": "schema:InteractionCounter",
+          "schema:interactionType": "schema:FollowAction",
+          "schema:userInteractionCount": 67890
+        }
+      ],
+      "schema:text": "The Future of Work: How AI Will Create More Jobs Than It Destroys",
+      "schema:inLanguage": "wd:Q1860",
+      "schema:contentLocation": "wd:Q145",
+      "schema:contentRating": "Verified",
+      "my:engagement": 0.85,
+      "my:misinformationFlag": {
+        "@type": "xsd:boolean",
+        "@value": false
+      },
+      "my:factCheckSource": {
+        "@id": "wd:Q310207"
+      },
+      "my:sentimentScore": {
+        "@type": "xsd:float",
+        "@value": "0.76"
+      },
+      "my:toxicityScore": {
+        "@type": "xsd:float",
+        "@value": "0.04"
+      },
+      "my:politicalLeaning": "Neutral",
+      "my:hasExternalLink": {
+        "@type": "xsd:boolean",
+        "@value": true
+      },
+      "my:viralScore": {
+        "@type": "xsd:float",
+        "@value": "0.67"
+      },
+      "my:moderationAction": "Approved"
+    },
+    {
+      "@id": "https://www.kaggle.com/datasets/imaadmahmood/social-media-and-misinformation-dataset-2024/social%20media%20content%20and%20misinformation%20data_qids_topic_qids/rd_022",
+      "@type": "http://schema.org/SocialMediaPosting",
+      "schema:about": [
+        {
+          "@id": "wd:Q660936"
+        },
+        {
+          "@id": "wd:Q380933"
+        },
+        {
+          "@id": "wd:Q930164"
+        }
+      ],
+      "schema:identifier": "rd_022",
+      "schema:datePublished": {
+        "@type": "xsd:dateTime",
+        "@value": "2024-08-14T20:28:41Z"
+      },
+      "my:platform": "Q1136",
+      "schema:interactionStatistic": [
+        {
+          "@type": "schema:InteractionCounter",
+          "schema:interactionType": "schema:LikeAction",
+          "schema:userInteractionCount": 12
+        },
+        {
+          "@type": "schema:InteractionCounter",
+          "schema:interactionType": "schema:CommentAction",
+          "schema:userInteractionCount": 67
+        },
+        {
+          "@type": "schema:InteractionCounter",
+          "schema:interactionType": "schema:ShareAction",
+          "schema:userInteractionCount": 3
+        },
+        {
+          "@type": "schema:InteractionCounter",
+          "schema:interactionType": "schema:FollowAction",
+          "schema:userInteractionCount": 1234
+        }
+      ],
+      "schema:text": "Actually the earth is flat and all space agencies are lying to us about it",
+      "schema:inLanguage": "wd:Q1860",
+      "schema:contentLocation": "wd:Q408",
+      "schema:contentRating": "Unverified",
+      "my:engagement": 0.08,
+      "my:misinformationFlag": {
+        "@type": "xsd:boolean",
+        "@value": true
+      },
+      "my:factCheckSource": {
+        "@id": "wd:Q23548"
+      },
+      "my:sentimentScore": {
+        "@type": "xsd:float",
+        "@value": "-0.78"
+      },
+      "my:toxicityScore": {
+        "@type": "xsd:float",
+        "@value": "0.65"
+      },
+      "my:politicalLeaning": "Conspiracy",
+      "my:hasExternalLink": {
+        "@type": "xsd:boolean",
+        "@value": false
+      },
+      "my:viralScore": {
+        "@type": "xsd:float",
+        "@value": "0.34"
+      },
+      "my:moderationAction": "Hidden"
+    },
+    {
+      "@id": "https://www.kaggle.com/datasets/imaadmahmood/social-media-and-misinformation-dataset-2024/social%20media%20content%20and%20misinformation%20data_qids_topic_qids/fb_023",
+      "@type": "http://schema.org/SocialMediaPosting",
+      "schema:about": [
+        {
+          "@id": "wd:Q105527"
+        },
+        {
+          "@id": "wd:Q11379"
+        },
+        {
+          "@id": "wd:Q192864"
+        }
+      ],
+      "schema:identifier": "fb_023",
+      "schema:datePublished": {
+        "@type": "xsd:dateTime",
+        "@value": "2024-08-14T12:44:19Z"
+      },
+      "my:platform": "Q355",
+      "schema:interactionStatistic": [
+        {
+          "@type": "schema:InteractionCounter",
+          "schema:interactionType": "schema:LikeAction",
+          "schema:userInteractionCount": 3456
+        },
+        {
+          "@type": "schema:InteractionCounter",
+          "schema:interactionType": "schema:CommentAction",
+          "schema:userInteractionCount": 234
+        },
+        {
+          "@type": "schema:InteractionCounter",
+          "schema:interactionType": "schema:ShareAction",
+          "schema:userInteractionCount": 678
+        },
+        {
+          "@type": "schema:InteractionCounter",
+          "schema:interactionType": "schema:FollowAction",
+          "schema:userInteractionCount": 78901
+        }
+      ],
+      "schema:text": "Live stream: Scientists explain breakthrough in fusion energy research",
+      "schema:inLanguage": "wd:Q1860",
+      "schema:contentLocation": "wd:Q142",
+      "schema:contentRating": "Verified",
+      "my:engagement": 0.92,
+      "my:misinformationFlag": {
+        "@type": "xsd:boolean",
+        "@value": false
+      },
+      "my:factCheckSource": {
+        "@id": "wd:Q191788"
+      },
+      "my:sentimentScore": {
+        "@type": "xsd:float",
+        "@value": "0.89"
+      },
+      "my:toxicityScore": {
+        "@type": "xsd:float",
+        "@value": "0.02"
+      },
+      "my:politicalLeaning": "Neutral",
+      "my:hasExternalLink": {
+        "@type": "xsd:boolean",
+        "@value": true
+      },
+      "my:viralScore": {
+        "@type": "xsd:float",
+        "@value": "0.78"
+      },
+      "my:moderationAction": "Featured"
+    },
+    {
+      "@id": "https://www.kaggle.com/datasets/imaadmahmood/social-media-and-misinformation-dataset-2024/social%20media%20content%20and%20misinformation%20data_qids_topic_qids/ig_024",
+      "@type": "http://schema.org/SocialMediaPosting",
+      "schema:about": [
+        {
+          "@id": "wd:Q317309"
+        },
+        {
+          "@id": "wd:Q4338318"
+        },
+        {
+          "@id": "wd:Q1058733"
+        }
+      ],
+      "schema:identifier": "ig_024",
+      "schema:datePublished": {
+        "@type": "xsd:dateTime",
+        "@value": "2024-08-14T16:33:27Z"
+      },
+      "my:platform": "Q209330",
+      "schema:interactionStatistic": [
+        {
+          "@type": "schema:InteractionCounter",
+          "schema:interactionType": "schema:LikeAction",
+          "schema:userInteractionCount": 2345
+        },
+        {
+          "@type": "schema:InteractionCounter",
+          "schema:interactionType": "schema:CommentAction",
+          "schema:userInteractionCount": 456
+        },
+        {
+          "@type": "schema:InteractionCounter",
+          "schema:interactionType": "schema:ShareAction",
+          "schema:userInteractionCount": 345
+        },
+        {
+          "@type": "schema:InteractionCounter",
+          "schema:interactionType": "schema:FollowAction",
+          "schema:userInteractionCount": 123890
+        }
+      ],
+      "schema:text": "Mental health awareness is so important - sharing resources for anyone struggling",
+      "schema:inLanguage": "wd:Q1860",
+      "schema:contentLocation": "wd:Q16",
+      "schema:contentRating": "Verified",
+      "my:engagement": 0.94,
+      "my:misinformationFlag": {
+        "@type": "xsd:boolean",
+        "@value": false
+      },
+      "my:factCheckSource": {
+        "@id": "wd:Q7817"
+      },
+      "my:sentimentScore": {
+        "@type": "xsd:float",
+        "@value": "0.91"
+      },
+      "my:toxicityScore": {
+        "@type": "xsd:float",
+        "@value": "0.01"
+      },
+      "my:politicalLeaning": "Liberal",
+      "my:hasExternalLink": {
+        "@type": "xsd:boolean",
+        "@value": true
+      },
+      "my:viralScore": {
+        "@type": "xsd:float",
+        "@value": "0.56"
+      },
+      "my:moderationAction": "Approved"
+    },
+    {
+      "@id": "https://www.kaggle.com/datasets/imaadmahmood/social-media-and-misinformation-dataset-2024/social%20media%20content%20and%20misinformation%20data_qids_topic_qids/ln_028",
+      "@type": "http://schema.org/SocialMediaPosting",
+      "schema:about": [
+        {
+          "@id": "wd:Q623"
+        },
+        {
+          "@id": "wd:Q9049677"
+        },
+        {
+          "@id": "wd:Q15813953"
+        }
+      ],
+      "schema:identifier": "ln_028",
+      "schema:datePublished": {
+        "@type": "xsd:dateTime",
+        "@value": "2024-08-14T08:33:44Z"
+      },
+      "my:platform": "Q213660",
+      "schema:interactionStatistic": [
+        {
+          "@type": "schema:InteractionCounter",
+          "schema:interactionType": "schema:LikeAction",
+          "schema:userInteractionCount": 789
+        },
+        {
+          "@type": "schema:InteractionCounter",
+          "schema:interactionType": "schema:CommentAction",
+          "schema:userInteractionCount": 67
+        },
+        {
+          "@type": "schema:InteractionCounter",
+          "schema:interactionType": "schema:ShareAction",
+          "schema:userInteractionCount": 123
+        },
+        {
+          "@type": "schema:InteractionCounter",
+          "schema:interactionType": "schema:FollowAction",
+          "schema:userInteractionCount": 34567
+        }
+      ],
+      "schema:text": "Proud to announce our company achieved carbon neutrality ahead of schedule",
+      "schema:inLanguage": "wd:Q1860",
+      "schema:contentLocation": "wd:Q183",
+      "schema:contentRating": "Verified",
+      "my:engagement": 0.83,
+      "my:misinformationFlag": {
+        "@type": "xsd:boolean",
+        "@value": false
+      },
+      "my:factCheckSource": {
+        "@id": "wd:Q96731641"
+      },
+      "my:sentimentScore": {
+        "@type": "xsd:float",
+        "@value": "0.87"
+      },
+      "my:toxicityScore": {
+        "@type": "xsd:float",
+        "@value": "0.02"
+      },
+      "my:politicalLeaning": "Liberal",
+      "my:hasExternalLink": {
+        "@type": "xsd:boolean",
+        "@value": false
+      },
+      "my:viralScore": {
+        "@type": "xsd:float",
+        "@value": "0.41"
+      },
+      "my:moderationAction": "Approved"
+    },
+    {
+      "@id": "https://www.kaggle.com/datasets/imaadmahmood/social-media-and-misinformation-dataset-2024/social%20media%20content%20and%20misinformation%20data_qids_topic_qids/fb_030",
+      "@type": "http://schema.org/SocialMediaPosting",
+      "schema:about": [
+        {
+          "@id": "wd:Q27725508"
+        },
+        {
+          "@id": "wd:Q30288036"
+        },
+        {
+          "@id": "wd:Q7188"
+        }
+      ],
+      "schema:identifier": "fb_030",
+      "schema:datePublished": {
+        "@type": "xsd:dateTime",
+        "@value": "2024-08-14T18:55:11Z"
+      },
+      "my:platform": "Q355",
+      "schema:interactionStatistic": [
+        {
+          "@type": "schema:InteractionCounter",
+          "schema:interactionType": "schema:LikeAction",
+          "schema:userInteractionCount": 45
+        },
+        {
+          "@type": "schema:InteractionCounter",
+          "schema:interactionType": "schema:CommentAction",
+          "schema:userInteractionCount": 234
+        },
+        {
+          "@type": "schema:InteractionCounter",
+          "schema:interactionType": "schema:ShareAction",
+          "schema:userInteractionCount": 12
+        },
+        {
+          "@type": "schema:InteractionCounter",
+          "schema:interactionType": "schema:FollowAction",
+          "schema:userInteractionCount": 12367
+        }
+      ],
+      "schema:text": "Vaccines contain microchips for government tracking - wake up people!",
+      "schema:inLanguage": "wd:Q1860",
+      "schema:contentLocation": "wd:Q30",
+      "schema:contentRating": "Unverified",
+      "my:engagement": 0.06,
+      "my:misinformationFlag": {
+        "@type": "xsd:boolean",
+        "@value": true
+      },
+      "my:factCheckSource": {
+        "@id": "wd:Q583725"
+      },
+      "my:sentimentScore": {
+        "@type": "xsd:float",
+        "@value": "-0.89"
+      },
+      "my:toxicityScore": {
+        "@type": "xsd:float",
+        "@value": "0.94"
+      },
+      "my:politicalLeaning": "Conspiracy",
+      "my:hasExternalLink": {
+        "@type": "xsd:boolean",
+        "@value": false
+      },
+      "my:viralScore": {
+        "@type": "xsd:float",
+        "@value": "0.73"
+      },
+      "my:moderationAction": "Removed"
+    },
+    {
+      "@id": "https://www.kaggle.com/datasets/imaadmahmood/social-media-and-misinformation-dataset-2024/social%20media%20content%20and%20misinformation%20data_qids_topic_qids/tw_032",
+      "@type": "http://schema.org/SocialMediaPosting",
+      "schema:about": [
+        {
+          "@id": "wd:Q28969364"
+        },
+        {
+          "@id": "wd:Q623"
+        },
+        {
+          "@id": "wd:Q474191"
+        }
+      ],
+      "schema:identifier": "tw_032",
+      "schema:datePublished": {
+        "@type": "xsd:dateTime",
+        "@value": "2024-08-15T10:44:18Z"
+      },
+      "my:platform": "Q1390577",
+      "schema:interactionStatistic": [
+        {
+          "@type": "schema:InteractionCounter",
+          "schema:interactionType": "schema:LikeAction",
+          "schema:userInteractionCount": 1234
+        },
+        {
+          "@type": "schema:InteractionCounter",
+          "schema:interactionType": "schema:CommentAction",
+          "schema:userInteractionCount": 234
+        },
+        {
+          "@type": "schema:InteractionCounter",
+          "schema:interactionType": "schema:ShareAction",
+          "schema:userInteractionCount": 456
+        },
+        {
+          "@type": "schema:InteractionCounter",
+          "schema:interactionType": "schema:FollowAction",
+          "schema:userInteractionCount": 234789
+        }
+      ],
+      "schema:text": "New study shows plant-based diets reduce carbon footprint by 73%",
+      "schema:inLanguage": "wd:Q1860",
+      "schema:contentLocation": "wd:Q145",
+      "schema:contentRating": "Verified",
+      "my:engagement": 0.81,
+      "my:misinformationFlag": {
+        "@type": "xsd:boolean",
+        "@value": false
+      },
+      "my:factCheckSource": {
+        "@id": "wd:Q180445"
+      },
+      "my:sentimentScore": {
+        "@type": "xsd:float",
+        "@value": "0.79"
+      },
+      "my:toxicityScore": {
+        "@type": "xsd:float",
+        "@value": "0.06"
+      },
+      "my:politicalLeaning": "Liberal",
+      "my:hasExternalLink": {
+        "@type": "xsd:boolean",
+        "@value": true
+      },
+      "my:viralScore": {
+        "@type": "xsd:float",
+        "@value": "0.65"
+      },
+      "my:moderationAction": "Approved"
+    },
+    {
+      "@id": "https://www.kaggle.com/datasets/imaadmahmood/social-media-and-misinformation-dataset-2024/social%20media%20content%20and%20misinformation%20data_qids_topic_qids/yt_033",
+      "@type": "http://schema.org/SocialMediaPosting",
+      "schema:about": [
+        {
+          "@id": "wd:Q16144068"
+        },
+        {
+          "@id": "wd:Q18335"
+        },
+        {
+          "@id": "wd:Q10566551"
+        }
+      ],
+      "schema:identifier": "yt_033",
+      "schema:datePublished": {
+        "@type": "xsd:dateTime",
+        "@value": "2024-08-15T13:28:45Z"
+      },
+      "my:platform": "Q866",
+      "schema:interactionStatistic": [
+        {
+          "@type": "schema:InteractionCounter",
+          "schema:interactionType": "schema:LikeAction",
+          "schema:userInteractionCount": 2345
+        },
+        {
+          "@type": "schema:InteractionCounter",
+          "schema:interactionType": "schema:CommentAction",
+          "schema:userInteractionCount": 456
+        },
+        {
+          "@type": "schema:InteractionCounter",
+          "schema:interactionType": "schema:ShareAction",
+          "schema:userInteractionCount": 345
+        },
+        {
+          "@type": "schema:InteractionCounter",
+          "schema:interactionType": "schema:FollowAction",
+          "schema:userInteractionCount": 345123
+        }
+      ],
+      "schema:text": "Why 5G is Actually Safe: Electromagnetic Radiation Explained",
+      "schema:inLanguage": "wd:Q1860",
+      "schema:contentLocation": "wd:Q16",
+      "schema:contentRating": "Verified",
+      "my:engagement": 0.76,
+      "my:misinformationFlag": {
+        "@type": "xsd:boolean",
+        "@value": false
+      },
+      "my:factCheckSource": {
+        "@id": "wd:Q127793"
+      },
+      "my:sentimentScore": {
+        "@type": "xsd:float",
+        "@value": "0.72"
+      },
+      "my:toxicityScore": {
+        "@type": "xsd:float",
+        "@value": "0.12"
+      },
+      "my:politicalLeaning": "Neutral",
+      "my:hasExternalLink": {
+        "@type": "xsd:boolean",
+        "@value": true
+      },
+      "my:viralScore": {
+        "@type": "xsd:float",
+        "@value": "0.58"
+      },
+      "my:moderationAction": "Approved"
+    },
+    {
+      "@id": "https://www.kaggle.com/datasets/imaadmahmood/social-media-and-misinformation-dataset-2024/social%20media%20content%20and%20misinformation%20data_qids_topic_qids/tk_034",
+      "@type": "http://schema.org/SocialMediaPosting",
+      "schema:about": [
+        {
+          "@id": "wd:Q49473179"
+        },
+        {
+          "@id": "wd:Q1507246"
+        },
+        {
+          "@id": "wd:Q8434"
+        }
+      ],
+      "schema:identifier": "tk_034",
+      "schema:datePublished": {
+        "@type": "xsd:dateTime",
+        "@value": "2024-08-15T16:11:29Z"
+      },
+      "my:platform": "Q48938223",
+      "schema:interactionStatistic": [
+        {
+          "@type": "schema:InteractionCounter",
+          "schema:interactionType": "schema:LikeAction",
+          "schema:userInteractionCount": 3456
+        },
+        {
+          "@type": "schema:InteractionCounter",
+          "schema:interactionType": "schema:CommentAction",
+          "schema:userInteractionCount": 345
+        },
+        {
+          "@type": "schema:InteractionCounter",
+          "schema:interactionType": "schema:ShareAction",
+          "schema:userInteractionCount": 789
+        },
+        {
+          "@type": "schema:InteractionCounter",
+          "schema:interactionType": "schema:FollowAction",
+          "schema:userInteractionCount": 456890
+        }
+      ],
+      "schema:text": "Showing how easy it is to spot deepfake Videos - media literacy matters!",
+      "schema:inLanguage": "wd:Q1860",
+      "schema:contentLocation": "wd:Q30",
+      "schema:contentRating": "Verified",
+      "my:engagement": 0.87,
+      "my:misinformationFlag": {
+        "@type": "xsd:boolean",
+        "@value": false
+      },
+      "my:factCheckSource": {
+        "@id": "wd:Q1373549"
+      },
+      "my:sentimentScore": {
+        "@type": "xsd:float",
+        "@value": "0.84"
+      },
+      "my:toxicityScore": {
+        "@type": "xsd:float",
+        "@value": "0.04"
+      },
+      "my:politicalLeaning": "Neutral",
+      "my:hasExternalLink": {
+        "@type": "xsd:boolean",
+        "@value": true
+      },
+      "my:viralScore": {
+        "@type": "xsd:float",
+        "@value": "0.74"
+      },
+      "my:moderationAction": "Educational"
+    },
+    {
+      "@id": "https://www.kaggle.com/datasets/imaadmahmood/social-media-and-misinformation-dataset-2024/social%20media%20content%20and%20misinformation%20data_qids_topic_qids/rd_036",
+      "@type": "http://schema.org/SocialMediaPosting",
+      "schema:about": [
+        {
+          "@id": "wd:Q5090665"
+        },
+        {
+          "@id": "wd:Q283"
+        },
+        {
+          "@id": "wd:Q930164"
+        }
+      ],
+      "schema:identifier": "rd_036",
+      "schema:datePublished": {
+        "@type": "xsd:dateTime",
+        "@value": "2024-08-15T19:45:23Z"
+      },
+      "my:platform": "Q1136",
+      "schema:interactionStatistic": [
+        {
+          "@type": "schema:InteractionCounter",
+          "schema:interactionType": "schema:LikeAction",
+          "schema:userInteractionCount": 23
+        },
+        {
+          "@type": "schema:InteractionCounter",
+          "schema:interactionType": "schema:CommentAction",
+          "schema:userInteractionCount": 123
+        },
+        {
+          "@type": "schema:InteractionCounter",
+          "schema:interactionType": "schema:ShareAction",
+          "schema:userInteractionCount": 8
+        },
+        {
+          "@type": "schema:InteractionCounter",
+          "schema:interactionType": "schema:FollowAction",
+          "schema:userInteractionCount": 2345
+        }
+      ],
+      "schema:text": "Chemtrails are real and they're poisoning our water supply",
+      "schema:inLanguage": "wd:Q1860",
+      "schema:contentLocation": "wd:Q30",
+      "schema:contentRating": "Unverified",
+      "my:engagement": 0.09,
+      "my:misinformationFlag": {
+        "@type": "xsd:boolean",
+        "@value": true
+      },
+      "my:factCheckSource": {
+        "@id": "wd:Q3244038"
+      },
+      "my:sentimentScore": {
+        "@type": "xsd:float",
+        "@value": "-0.67"
+      },
+      "my:toxicityScore": {
+        "@type": "xsd:float",
+        "@value": "0.78"
+      },
+      "my:politicalLeaning": "Conspiracy",
+      "my:hasExternalLink": {
+        "@type": "xsd:boolean",
+        "@value": false
+      },
+      "my:viralScore": {
+        "@type": "xsd:float",
+        "@value": "0.41"
+      },
+      "my:moderationAction": "Removed"
+    },
+    {
+      "@id": "https://www.kaggle.com/datasets/imaadmahmood/social-media-and-misinformation-dataset-2024/social%20media%20content%20and%20misinformation%20data_qids_topic_qids/fb_037",
+      "@type": "http://schema.org/SocialMediaPosting",
+      "schema:about": [
+        {
+          "@id": "wd:Q7937"
+        },
+        {
+          "@id": "wd:Q11663"
+        },
+        {
+          "@id": "wd:Q192864"
+        }
+      ],
+      "schema:identifier": "fb_037",
+      "schema:datePublished": {
+        "@type": "xsd:dateTime",
+        "@value": "2024-08-15T14:22:41Z"
+      },
+      "my:platform": "Q355",
+      "schema:interactionStatistic": [
+        {
+          "@type": "schema:InteractionCounter",
+          "schema:interactionType": "schema:LikeAction",
+          "schema:userInteractionCount": 4567
+        },
+        {
+          "@type": "schema:InteractionCounter",
+          "schema:interactionType": "schema:CommentAction",
+          "schema:userInteractionCount": 789
+        },
+        {
+          "@type": "schema:InteractionCounter",
+          "schema:interactionType": "schema:ShareAction",
+          "schema:userInteractionCount": 567
+        },
+        {
+          "@type": "schema:InteractionCounter",
+          "schema:interactionType": "schema:FollowAction",
+          "schema:userInteractionCount": 89456
+        }
+      ],
+      "schema:text": "Live Q&A with climate scientists about extreme weather patterns",
+      "schema:inLanguage": "wd:Q1860",
+      "schema:contentLocation": "wd:Q183",
+      "schema:contentRating": "Verified",
+      "my:engagement": 0.91,
+      "my:misinformationFlag": {
+        "@type": "xsd:boolean",
+        "@value": false
+      },
+      "my:factCheckSource": {
+        "@id": "wd:Q103843442"
+      },
+      "my:sentimentScore": {
+        "@type": "xsd:float",
+        "@value": "0.83"
+      },
+      "my:toxicityScore": {
+        "@type": "xsd:float",
+        "@value": "0.05"
+      },
+      "my:politicalLeaning": "Neutral",
+      "my:hasExternalLink": {
+        "@type": "xsd:boolean",
+        "@value": false
+      },
+      "my:viralScore": {
+        "@type": "xsd:float",
+        "@value": "0.72"
+      },
+      "my:moderationAction": "Featured"
+    },
+    {
+      "@id": "https://www.kaggle.com/datasets/imaadmahmood/social-media-and-misinformation-dataset-2024/social%20media%20content%20and%20misinformation%20data_qids_topic_qids/ig_038",
+      "@type": "http://schema.org/SocialMediaPosting",
+      "schema:about": [
+        {
+          "@id": "wd:Q13579947"
+        },
+        {
+          "@id": "wd:Q1507246"
+        },
+        {
+          "@id": "wd:Q37565127"
+        }
+      ],
+      "schema:identifier": "ig_038",
+      "schema:datePublished": {
+        "@type": "xsd:dateTime",
+        "@value": "2024-08-15T17:33:55Z"
+      },
+      "my:platform": "Q209330",
+      "schema:interactionStatistic": [
+        {
+          "@type": "schema:InteractionCounter",
+          "schema:interactionType": "schema:LikeAction",
+          "schema:userInteractionCount": 2134
+        },
+        {
+          "@type": "schema:InteractionCounter",
+          "schema:interactionType": "schema:CommentAction",
+          "schema:userInteractionCount": 234
+        },
+        {
+          "@type": "schema:InteractionCounter",
+          "schema:interactionType": "schema:ShareAction",
+          "schema:userInteractionCount": 456
+        },
+        {
+          "@type": "schema:InteractionCounter",
+          "schema:interactionType": "schema:FollowAction",
+          "schema:userInteractionCount": 123567
+        }
+      ],
+      "schema:text": "Quick tutorial on identifying misinformation in your social media feed",
+      "schema:inLanguage": "wd:Q1860",
+      "schema:contentLocation": "wd:Q16",
+      "schema:contentRating": "Verified",
+      "my:engagement": 0.86,
+      "my:misinformationFlag": {
+        "@type": "xsd:boolean",
+        "@value": false
+      },
+      "my:factCheckSource": {
+        "@id": "wd:Q130879"
+      },
+      "my:sentimentScore": {
+        "@type": "xsd:float",
+        "@value": "0.81"
+      },
+      "my:toxicityScore": {
+        "@type": "xsd:float",
+        "@value": "0.07"
+      },
+      "my:politicalLeaning": "Neutral",
+      "my:hasExternalLink": {
+        "@type": "xsd:boolean",
+        "@value": true
+      },
+      "my:viralScore": {
+        "@type": "xsd:float",
+        "@value": "0.69"
+      },
+      "my:moderationAction": "Promoted"
+    },
+    {
+      "@id": "https://www.kaggle.com/datasets/imaadmahmood/social-media-and-misinformation-dataset-2024/social%20media%20content%20and%20misinformation%20data_qids_topic_qids/tw_039",
+      "@type": "http://schema.org/SocialMediaPosting",
+      "schema:about": [
+        {
+          "@id": "wd:Q27768150"
+        },
+        {
+          "@id": "wd:Q117454372"
+        },
+        {
+          "@id": "wd:Q13439834"
+        }
+      ],
+      "schema:identifier": "tw_039",
+      "schema:datePublished": {
+        "@type": "xsd:dateTime",
+        "@value": "2024-08-15T20:15:44Z"
+      },
+      "my:platform": "Q1390577",
+      "schema:interactionStatistic": [
+        {
+          "@type": "schema:InteractionCounter",
+          "schema:interactionType": "schema:LikeAction",
+          "schema:userInteractionCount": 456
+        },
+        {
+          "@type": "schema:InteractionCounter",
+          "schema:interactionType": "schema:CommentAction",
+          "schema:userInteractionCount": 567
+        },
+        {
+          "@type": "schema:InteractionCounter",
+          "schema:interactionType": "schema:ShareAction",
+          "schema:userInteractionCount": 123
+        },
+        {
+          "@type": "schema:InteractionCounter",
+          "schema:interactionType": "schema:FollowAction",
+          "schema:userInteractionCount": 678901
+        }
+      ],
+      "schema:text": "Electric grid can't handle renewable energy - blackouts incoming this winter",
+      "schema:inLanguage": "wd:Q1860",
+      "schema:contentLocation": "wd:Q30",
+      "schema:contentRating": "Unverified",
+      "my:engagement": 0.28,
+      "my:misinformationFlag": "Uncertain",
+      "my:factCheckSource": {
+        "@id": "wd:Q217810"
+      },
+      "my:sentimentScore": {
+        "@type": "xsd:float",
+        "@value": "-0.34"
+      },
+      "my:toxicityScore": {
+        "@type": "xsd:float",
+        "@value": "0.67"
+      },
+      "my:politicalLeaning": "Conservative",
+      "my:hasExternalLink": {
+        "@type": "xsd:boolean",
+        "@value": false
+      },
+      "my:viralScore": {
+        "@type": "xsd:float",
+        "@value": "0.54"
+      },
+      "my:moderationAction": "Fact_Checked"
+    }
+  ]
+}

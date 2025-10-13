@@ -72,47 +72,169 @@ def main():
     mappings_path = csv_path.parent / "mappings.json"
     prop_map = load_mappings(mappings_path)
 
-    g = Graph()
-    g.bind("wd", WIKIDATA)
-    g.bind("wdt", WD_PROP)
-    g.bind("schema", SCHEMA)
+    # Build JSON-LD per README example: top-level @context and @graph array
+    values_map = {}
+    # load values mapping (if mappings.json has 'values' section)
+    mappings_values_path = csv_path.parent / "mappings.json"
+    if mappings_values_path.exists():
+        try:
+            mv = json.loads(mappings_values_path.read_text(encoding="utf-8"))
+            values_map = mv.get("values", {})
+        except Exception:
+            values_map = {}
+
+    context = {
+        "schema": "http://schema.org/",
+        "wd": "http://www.wikidata.org/entity/",
+        "xsd": "http://www.w3.org/2001/XMLSchema#",
+        "my": "http://example.org/ontology/"
+    }
+
+    graph = []
+
+    def qid_label(col: str, qid: str):
+        colvals = values_map.get(col, {})
+        for orig, info in colvals.items():
+            if info.get("qid") == qid:
+                return info.get("label")
+        return None
 
     for idx, row in df.iterrows():
-        subj = make_subject(base_uri, idx)
-        g.add((subj, RDF.type, SCHEMA.SocialMediaPosting))
-        for col in df.columns:
-            val = row[col]
-            if pd.isna(val):
-                continue
-            # if value looks like a QID
-            sval = str(val).strip()
-            # treat only exact QID tokens (e.g. Q1390577) as entity URIs
-            if re.fullmatch(r"Q\d+", sval):
-                # If we have a mapped property for the column, use it, else use schema:about
-                pid = prop_map.get(col)
-                if pid:
-                    pred = prop_id_to_uri(pid)
-                else:
-                    pred = SCHEMA.about
-                g.add((subj, pred, qid_to_uri(sval)))
+        post_id = row.get("Post_ID") if not pd.isna(row.get("Post_ID")) else f"row/{idx}"
+        subj_id = f"{base_uri}{quote(str(post_id), safe='') }"
+        obj = {"@id": subj_id, "@type": "http://schema.org/SocialMediaPosting"}
+
+        # schema:about from Topic_Tags
+        topic = row.get("Topic_Tags")
+        if not pd.isna(topic) and str(topic).strip():
+            parts = [p.strip() for p in str(topic).split(";") if p.strip()]
+            about = [{"@id": f"wd:{p}"} for p in parts if re.fullmatch(r"Q\d+", p)]
+            if about:
+                obj["schema:about"] = about
+
+        # identifier
+        if post_id:
+            obj["schema:identifier"] = str(post_id)
+
+        # datePublished
+        ts = row.get("Timestamp")
+        if not pd.isna(ts) and str(ts).strip():
+            obj["schema:datePublished"] = {"@type": "xsd:dateTime", "@value": str(ts)}
+
+        # platform (label preferred)
+        platform = row.get("Platform")
+        if not pd.isna(platform):
+            s = str(platform).strip()
+            if re.fullmatch(r"Q\d+", s):
+                lbl = qid_label("Platform", s)
+                obj["my:platform"] = lbl if lbl else s
             else:
-                # literal property: if mapping suggests a property use it otherwise schema:additionalProperty
-                pid = prop_map.get(col)
-                pred = prop_id_to_uri(pid) if pid else SCHEMA.additionalProperty
-                # try to coerce numeric
-                try:
-                    if sval.isdigit():
-                        lit = Literal(int(sval), datatype=XSD.integer)
-                    else:
-                        lit = Literal(sval)
-                except Exception:
-                    lit = Literal(sval)
-                g.add((subj, pred, lit))
+                obj["my:platform"] = s
+
+        # interactionStatistic
+        interactions = []
+        like = row.get("Like_Count")
+        if not pd.isna(like):
+            interactions.append({"@type": "schema:InteractionCounter", "schema:interactionType": "schema:LikeAction", "schema:userInteractionCount": int(like)})
+        comment = row.get("Comment_Count")
+        if not pd.isna(comment):
+            interactions.append({"@type": "schema:InteractionCounter", "schema:interactionType": "schema:CommentAction", "schema:userInteractionCount": int(comment)})
+        share = row.get("Share_Count")
+        if not pd.isna(share):
+            interactions.append({"@type": "schema:InteractionCounter", "schema:interactionType": "schema:ShareAction", "schema:userInteractionCount": int(share)})
+        followers = row.get("User_Followers")
+        if not pd.isna(followers):
+            try:
+                interactions.append({"@type": "schema:InteractionCounter", "schema:interactionType": "schema:FollowAction", "schema:userInteractionCount": int(followers)})
+            except Exception:
+                pass
+        if interactions:
+            obj["schema:interactionStatistic"] = interactions
+
+        # text
+        text = row.get("Content_Text")
+        if not pd.isna(text):
+            obj["schema:text"] = str(text)
+
+        # language
+        lang = row.get("Language")
+        if not pd.isna(lang) and re.fullmatch(r"Q\d+", str(lang)):
+            obj["schema:inLanguage"] = f"wd:{lang}"
+
+        # contentLocation
+        country = row.get("Country")
+        if not pd.isna(country) and re.fullmatch(r"Q\d+", str(country)):
+            obj["schema:contentLocation"] = f"wd:{country}"
+
+        # contentRating / verification
+        ver = row.get("Verification_Status")
+        if not pd.isna(ver):
+            obj["schema:contentRating"] = str(ver)
+
+        # engagement
+        eng = row.get("Engagement_Score")
+        if not pd.isna(eng):
+            try:
+                obj["my:engagement"] = float(eng)
+            except Exception:
+                obj["my:engagement"] = eng
+
+        # misinformation flag
+        mis = row.get("Misinformation_Flag")
+        if not pd.isna(mis):
+            mstr = str(mis).strip()
+            if mstr.lower() in ("true", "false"):
+                obj["my:misinformationFlag"] = {"@type": "xsd:boolean", "@value": mstr.lower() == "true"}
+            else:
+                obj["my:misinformationFlag"] = str(mis)
+
+        # fact check source
+        fcs = row.get("Fact_Check_Source")
+        if not pd.isna(fcs):
+            s = str(fcs).strip()
+            if re.fullmatch(r"Q\d+", s):
+                obj["my:factCheckSource"] = {"@id": f"wd:{s}"}
+            else:
+                obj["my:factCheckSource"] = {"@id": s}
+
+        # sentiment and toxicity
+        sent = row.get("Sentiment_Score")
+        if not pd.isna(sent):
+            obj["my:sentimentScore"] = {"@type": "xsd:float", "@value": str(sent)}
+        tox = row.get("Toxicity_Score")
+        if not pd.isna(tox):
+            obj["my:toxicityScore"] = {"@type": "xsd:float", "@value": str(tox)}
+
+        # political leaning
+        pl = row.get("Political_Leaning")
+        if not pd.isna(pl):
+            obj["my:politicalLeaning"] = str(pl)
+
+        # hasExternalLink
+        hel = row.get("Has_External_Link")
+        if not pd.isna(hel):
+            hstr = str(hel).strip()
+            if hstr.lower() in ("true", "false"):
+                obj["my:hasExternalLink"] = {"@type": "xsd:boolean", "@value": hstr.lower() == "true"}
+            else:
+                obj["my:hasExternalLink"] = str(hel)
+
+        # viralScore
+        vs = row.get("Viral_Score")
+        if not pd.isna(vs):
+            obj["my:viralScore"] = {"@type": "xsd:float", "@value": str(vs)}
+
+        # moderationAction
+        ma = row.get("Moderation_Action")
+        if not pd.isna(ma):
+            obj["my:moderationAction"] = str(ma)
+
+        graph.append(obj)
 
     out_jsonld = csv_path.parent / (csv_path.stem + ".jsonld")
 
-    # rdflib's json-ld serializer
-    g.serialize(destination=str(out_jsonld), format="json-ld", indent=2)
+    jsonld_doc = {"@context": context, "@graph": graph}
+    out_jsonld.write_text(json.dumps(jsonld_doc, indent=2, ensure_ascii=False), encoding="utf-8")
 
     print(f"Wrote JSON-LD: {out_jsonld}")
 
