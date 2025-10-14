@@ -1,7 +1,7 @@
 @prefix sh: <http://www.w3.org/ns/shacl#> .
 @prefix schema: <http://schema.org/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-@prefix my: <http://example.org/my#> .
+@prefix smsm: <https://purl.archive.org/domain/smsm> .
 @prefix wd: <http://www.wikidata.org/entity/> .
 
 #################################################################
@@ -60,59 +60,59 @@ schema:SocialMediaPostingShape
 
     # platform (custom field)
     sh:property [
-        sh:path my:platform ;
+        sh:path smsm:platform ;
         sh:datatype xsd:string ;   # could also be IRI if you use wd:Qxxxx
     ] ;
 
     # engagement score
     sh:property [
-        sh:path my:engagement ;
+        sh:path smsm:engagement ;
         sh:datatype xsd:float ;
     ] ;
 
     # misinformation flag
     sh:property [
-        sh:path my:misinformationFlag ;
+        sh:path smsm:misinformationFlag ;
         sh:datatype xsd:boolean ;
     ] ;
 
     # fact check source
     sh:property [
-        sh:path my:factCheckSource ;
+        sh:path smsm:factCheckSource ;
         sh:nodeKind sh:IRI ;
     ] ;
 
     # sentiment & toxicity scores
     sh:property [
-        sh:path my:sentimentScore ;
+        sh:path smsm:sentimentScore ;
         sh:datatype xsd:float ;
     ] ;
     sh:property [
-        sh:path my:toxicityScore ;
+        sh:path smsm:toxicityScore ;
         sh:datatype xsd:float ;
     ] ;
 
     # political leaning
     sh:property [
-        sh:path my:politicalLeaning ;
+        sh:path smsm:politicalLeaning ;
         sh:datatype xsd:string ;
     ] ;
 
     # external link
     sh:property [
-        sh:path my:hasExternalLink ;
+        sh:path smsm:hasExternalLink ;
         sh:datatype xsd:boolean ;
     ] ;
 
     # viral score
     sh:property [
-        sh:path my:viralScore ;
+        sh:path smsm:viralScore ;
         sh:datatype xsd:float ;
     ] ;
 
     # moderation action
     sh:property [
-        sh:path my:moderationAction ;
+        sh:path smsm:moderationAction ;
         sh:datatype xsd:string ;
     ] ;
 
