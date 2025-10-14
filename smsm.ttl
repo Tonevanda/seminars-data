@@ -1,0 +1,63 @@
+@prefix rdf: <https://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <https://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+smsm:platform
+    a rdf:Property ;
+        rdfs:label "Platform"@en ;
+        rdfs:comment "The social media platform on which the post was posted on"@en ;
+        rdfs:range xsd:string .
+
+smsm:engagement
+    a rdf:Property ;
+        rdfs:label "Engagement"@en ;
+        rdfs:comment "The engagement score of the post"@en ;
+        rdfs:range xsd:float .
+
+smsm:misinformationFlag
+    a rdf:Property ;
+        rdfs:label "Misinformation Flag"@en ;
+        rdfs:comment "Flag indicating whether or not the post contains misinformation"@en ;
+        rdfs:range xsd:boolean .
+
+smsm:factCheckSource
+    a rdf:Property ;
+        rdfs:label "Fact Check Source"@en ;
+        rdfs:comment "The entity that fact checked the post's information"@en ;
+        rdfs:range xsd:string .
+
+smsm:sentimentScore
+    a rdf:Property ;
+        rdfs:label "Sentiment Score"@en ;
+        rdfs:comment "The post's sentiment score"@en ;
+        rdfs:range xsd:float .
+
+smsm:toxicityScore
+    a rdf:Property ;
+        rdfs:label "Toxicity Score"@en ;
+        rdfs:comment "The post's toxicity score"@en ;
+        rdfs:range xsd:float .
+
+smsm:viralScore
+    a rdf:Property ;
+        rdfs:label "Viral Score"@en ;
+        rdfs:comment "The post's viral score"@en ;
+        rdfs:range xsd:float .
+
+smsm:politicalLeaning
+    a rdf:Property ;
+        rdfs:label "Political Leaning"@en ;
+        rdfs:comment "The political leaning of the post's poster"@en ;
+        rdfs:range xsd:string .
+
+smsm:hasExternalLink
+    a rdf:Property ;
+        rdfs:label "Has External Link"@en ;
+        rdfs:comment "Flag indicating whether or not the post has a link to an external page"@en ;
+        rdfs:range xsd:boolean .
+
+smsm:moderationAction
+    a rdf:Property ;
+        rdfs:label "Moderation Action"@en ;
+        rdfs:comment "The platform's status enforced on the post"@en ;
+        rdfs:range xsd:string .

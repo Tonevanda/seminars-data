@@ -74,7 +74,7 @@ def map_tag(tag: str, cache_values: dict, site) -> str:
 
 def main():
     if len(sys.argv) < 2:
-        print('Usage: map_topic_tags_pywikibot.py <csv_qids>')
+        print('Usage: map_topic_tags.py <csv_qids>')
         sys.exit(2)
 
     csv_path = Path(sys.argv[1]).resolve()

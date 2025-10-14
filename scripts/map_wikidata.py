@@ -3,7 +3,7 @@
 Map CSV values to Wikidata QIDs using pywikibot and write a new CSV where values are replaced by QIDs.
 
 Usage:
-  python3 scripts/map_wikidata_pywikibot.py "social media content and misinformation data.csv"
+  python3 scripts/map_wikidata.py "social media content and misinformation data.csv"
 
 Notes:
 - This script uses pywikibot to call the Wikidata API (wbsearchentities).
@@ -77,7 +77,7 @@ def should_map_column(name: str, series: pd.Series) -> bool:
 
 def main():
     if len(sys.argv) < 2:
-        print("Usage: map_wikidata_pywikibot.py <csv>")
+        print("Usage: map_wikidata.py <csv>")
         sys.exit(2)
 
     csv_path = Path(sys.argv[1]).resolve()
