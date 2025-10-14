@@ -1,0 +1,13 @@
+[project]
+name = "data"
+version = "0.1.0"
+description = "Add your description here"
+requires-python = ">=3.13"
+dependencies = [
+    "pandas>=2.3.3",
+    "pywikibot>=10.5.0",
+    "rdflib>=7.2.1",
+    "rdflib-jsonld>=0.6.2",
+    "requests>=2.32.5",
+    "tqdm>=4.67.1",
+]

@@ -4,40 +4,19 @@ Convert a CSV with Wikidata QIDs into Turtle and JSON-LD using rdflib.
 
 Usage:
   python3 scripts/convert_csv_to_rdf.py "social media content and misinformation data_qids.csv"
-
-Behavior:
- - If `mappings.json` exists it will use mapped property IDs (P...) for columns when available.
- - For columns with QIDs as values, it will emit triples linking a generated subject URI to the QID (as a wikidata entity URI).
- - Numeric and literal columns are emitted as literals.
- - Writes `<csv>_qids.jsonld` in the same folder.
 """
 import json
 import sys
 import re
 from pathlib import Path
-from typing import Dict
 from urllib.parse import quote
 
 import pandas as pd
-from rdflib import Graph, Namespace, URIRef, Literal
-from rdflib.namespace import RDF, XSD
+from rdflib import Namespace, URIRef
 
 WIKIDATA = Namespace("http://www.wikidata.org/entity/")
 WD_PROP = Namespace("http://www.wikidata.org/prop/direct/")
 SCHEMA = Namespace("http://schema.org/")
-
-
-def load_mappings(mappings_path: Path) -> Dict[str, str]:
-    if not mappings_path.exists():
-        return {}
-    data = json.loads(mappings_path.read_text(encoding="utf-8"))
-    prop_map = {}
-    for col, info in data.get("columns", {}).items():
-        pm = info.get("property_match")
-        if isinstance(pm, dict) and pm.get("id"):
-            prop_map[col] = pm.get("id")
-    return prop_map
-
 
 def qid_to_uri(qid: str) -> URIRef:
     return URIRef(WIKIDATA + qid)
@@ -63,40 +42,19 @@ def main():
         print(f"CSV not found: {csv_path}")
         sys.exit(2)
 
-    # URL-encode the dataset name so the subject URIs are valid
     safe_stem = quote(csv_path.stem, safe="")
     base_uri = f"https://www.kaggle.com/datasets/imaadmahmood/social-media-and-misinformation-dataset-2024/{safe_stem}/"
 
     df = pd.read_csv(csv_path)
 
-    mappings_path = csv_path.parent / "mappings.json"
-    prop_map = load_mappings(mappings_path)
-
-    # Build JSON-LD per README example: top-level @context and @graph array
-    values_map = {}
-    # load values mapping (if mappings.json has 'values' section)
-    mappings_values_path = csv_path.parent / "mappings.json"
-    if mappings_values_path.exists():
-        try:
-            mv = json.loads(mappings_values_path.read_text(encoding="utf-8"))
-            values_map = mv.get("values", {})
-        except Exception:
-            values_map = {}
-
     context = {
         "schema": "http://schema.org/",
         "wd": "http://www.wikidata.org/entity/",
-        "xsd": "http://www.w3.org/2001/XMLSchema#"
+        "xsd": "http://www.w3.org/2001/XMLSchema#",
+        "smsm": "https://purl.archive.org/domain/smsm/"
     }
 
     graph = []
-
-    def qid_label(col: str, qid: str):
-        colvals = values_map.get(col, {})
-        for orig, info in colvals.items():
-            if info.get("qid") == qid:
-                return info.get("label")
-        return None
 
     for idx, row in df.iterrows():
         post_id = row.get("Post_ID") if not pd.isna(row.get("Post_ID")) else f"row/{idx}"
@@ -124,11 +82,7 @@ def main():
         platform = row.get("Platform")
         if not pd.isna(platform):
             s = str(platform).strip()
-            if re.fullmatch(r"Q\d+", s):
-                lbl = qid_label("Platform", s)
-                obj["my:platform"] = lbl if lbl else s
-            else:
-                obj["my:platform"] = s
+            obj["smsm:platform"] = {"@id": f"wd:{s}"}
 
         # interactionStatistic
         interactions = []
@@ -158,12 +112,12 @@ def main():
         # language
         lang = row.get("Language")
         if not pd.isna(lang) and re.fullmatch(r"Q\d+", str(lang)):
-            obj["schema:inLanguage"] = f"wd:{lang}"
+            obj["schema:inLanguage"] = {"@id": f"wd:{lang}"}
 
         # contentLocation
         country = row.get("Country")
         if not pd.isna(country) and re.fullmatch(r"Q\d+", str(country)):
-            obj["schema:contentLocation"] = f"wd:{country}"
+            obj["schema:contentLocation"] = {"@id": f"wd:{country}"}
 
         # contentRating / verification
         ver = row.get("Verification_Status")
@@ -174,59 +128,56 @@ def main():
         eng = row.get("Engagement_Score")
         if not pd.isna(eng):
             try:
-                obj["my:engagement"] = float(eng)
+                obj["smsm:engagement"] = float(eng)
             except Exception:
-                obj["my:engagement"] = eng
+                obj["smsm:engagement"] = eng
 
         # misinformation flag
         mis = row.get("Misinformation_Flag")
         if not pd.isna(mis):
             mstr = str(mis).strip()
             if mstr.lower() in ("true", "false"):
-                obj["my:misinformationFlag"] = {"@type": "xsd:boolean", "@value": mstr.lower() == "true"}
+                obj["smsm:misinformationFlag"] = mstr.lower() == "true"
             else:
-                obj["my:misinformationFlag"] = str(mis)
+                obj["smsm:misinformationFlag"] = str(mis)
 
         # fact check source
         fcs = row.get("Fact_Check_Source")
         if not pd.isna(fcs):
             s = str(fcs).strip()
-            if re.fullmatch(r"Q\d+", s):
-                obj["my:factCheckSource"] = {"@id": f"wd:{s}"}
-            else:
-                obj["my:factCheckSource"] = {"@id": s}
+            obj["smsm:factCheckSource"] = {"@id": f"wd:{s}"}
 
         # sentiment and toxicity
         sent = row.get("Sentiment_Score")
         if not pd.isna(sent):
-            obj["my:sentimentScore"] = {"@type": "xsd:float", "@value": str(sent)}
+            obj["smsm:sentimentScore"] = float(sent)
         tox = row.get("Toxicity_Score")
         if not pd.isna(tox):
-            obj["my:toxicityScore"] = {"@type": "xsd:float", "@value": str(tox)}
+            obj["smsm:toxicityScore"] = float(tox)
 
         # political leaning
         pl = row.get("Political_Leaning")
         if not pd.isna(pl):
-            obj["my:politicalLeaning"] = str(pl)
+            obj["smsm:politicalLeaning"] = str(pl)
 
         # hasExternalLink
         hel = row.get("Has_External_Link")
         if not pd.isna(hel):
             hstr = str(hel).strip()
             if hstr.lower() in ("true", "false"):
-                obj["my:hasExternalLink"] = {"@type": "xsd:boolean", "@value": hstr.lower() == "true"}
+                obj["smsm:hasExternalLink"] = hstr.lower() == "true"
             else:
-                obj["my:hasExternalLink"] = str(hel)
+                obj["smsm:hasExternalLink"] = str(hel)
 
         # viralScore
         vs = row.get("Viral_Score")
         if not pd.isna(vs):
-            obj["my:viralScore"] = {"@type": "xsd:float", "@value": str(vs)}
+            obj["smsm:viralScore"] = float(vs)
 
         # moderationAction
         ma = row.get("Moderation_Action")
         if not pd.isna(ma):
-            obj["my:moderationAction"] = str(ma)
+            obj["smsm:moderationAction"] = str(ma)
 
         graph.append(obj)
 

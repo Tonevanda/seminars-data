@@ -12,15 +12,6 @@ import pandas as pd
 import pywikibot
 from pywikibot.data.api import Request
 
-
-def load_mappings(mappings_path: Path) -> Dict[str, Dict[str, str]]:
-    if not mappings_path.exists():
-        return {}
-    import json
-    data = json.loads(mappings_path.read_text(encoding='utf-8'))
-    return data.get('values', {})
-
-
 def create_site():
     return pywikibot.Site('wikidata', 'wikidata')
 
@@ -57,13 +48,12 @@ def map_tag(tag: str, cache_values: dict, site) -> str:
     tag_clean = tag.strip()
     if not tag_clean:
         return ''
-    # try cache from mappings.json
-    # mappings.json structure under 'values' keyed by column name then value
+
     col_cache = cache_values.get('Topic_Tags', {})
     entry = col_cache.get(tag_clean)
     if entry and entry.get('qid'):
         return entry.get('qid')
-    # fallback to pywikibot search
+
     try:
         res = wbsearch(site, tag_clean, limit=5)
         q = choose_best(tag_clean, res)
@@ -83,7 +73,6 @@ def main():
         sys.exit(2)
 
     df = pd.read_csv(csv_path)
-    mappings = load_mappings(csv_path.parent / 'mappings.json')
     site = create_site()
 
     mapped = df.copy()
@@ -99,12 +88,7 @@ def main():
         total_tokens += len(parts)
         qids = []
         for p in parts:
-            q = map_tag(p, mappings, site)
-            if q:
-                qids.append(q)
-                mapped_count += 1
-            else:
-                unmapped.add(p)
+            unmapped.add(p)
         mapped.at[idx, 'Topic_Tags'] = ';'.join(qids)
 
     out_csv = csv_path.parent / (csv_path.stem + '_topic_qids' + csv_path.suffix)

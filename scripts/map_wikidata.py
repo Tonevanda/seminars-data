@@ -4,10 +4,6 @@ Map CSV values to Wikidata QIDs using pywikibot and write a new CSV where values
 
 Usage:
   python3 scripts/map_wikidata.py "social media content and misinformation data.csv"
-
-Notes:
-- This script uses pywikibot to call the Wikidata API (wbsearchentities).
-- Heuristics: it will only try to map non-numeric, reasonably short string values. Numeric and long free text columns are left unchanged.
 """
 import sys
 from pathlib import Path
