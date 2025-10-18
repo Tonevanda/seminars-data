@@ -2,6 +2,8 @@
 @prefix rdfs: <https://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
+
+## http://xmlns.com/foaf/spec/#term_OnlineAccount --> comentário Mariana MAlta
 smsm:platform
     a rdf:Property ;
         rdfs:label "Platform"@en ;
