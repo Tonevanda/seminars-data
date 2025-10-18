@@ -1,23 +1,14 @@
-Wikidata mapping helper
-=======================
+# Social Media Disinformation
 
-This small helper maps column headers and cell values from the CSV to Wikidata properties (P...) and items (Q...).
+This project converts a low FAIRness dataset from [Kaggle](https://www.kaggle.com/datasets/imaadmahmood/social-media-and-misinformation-dataset-2024) into a 5-star dataset.
 
-Files
-- `scripts/map_wikidata.py` - main script. Usage:
+There are 3 scripts:
 
-  python3 scripts/map_wikidata.py "social media content and misinformation data.csv"
+- `map_wikidata.py` which maps each entity in the original CSV dataset to a wikidata entry representing that entity;
+- `map_topic_tags.py` which does the same thing but just for the topic tags column, due to the way they are formatted;
+- `convert_csv_to_rdf.py` which converts the final, harmonized CSV dataset into an RDF representation, in this case we chose JSON-LD.
 
-- `requirements.txt` - Python dependencies
-
-Outputs
-- `mappings.json` - JSON with column->property candidate and value->item mappings
-- `<csv>_with_qids.csv` - augmented CSV adding `<column>_qid` and `<column>_qid_label` columns where available
-
-Notes
-- The script uses the public Wikidata API. Rate limiting may apply. It uses simple heuristics and is intended to bootstrap manual review.
-
-Example structure of JSON-LD object representing a social media post
+Below is an excerpt of an example JSON-LD with the structure we defined:
 
 ```json
 {
@@ -104,3 +95,8 @@ Example structure of JSON-LD object representing a social media post
     "my:moderationAction": "Warning_Label"
 }
 ```
+
+## Developed by
+
+- João Lourenço
+- João das Neves
