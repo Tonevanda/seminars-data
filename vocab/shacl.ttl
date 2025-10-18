@@ -115,7 +115,7 @@ schema:SocialMediaPostingShape
     # interaction statistics (list of schema:InteractionCounter)
     sh:property [
         sh:path schema:interactionStatistic ;
-        sh:class schema:InteractionCounter ;
+        sh:node schema:InteractionCounterShape ;
         sh:minCount 1 ;
     ] .
 
