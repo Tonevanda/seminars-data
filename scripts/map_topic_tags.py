@@ -6,7 +6,6 @@ Writes a new CSV with the `Topic_Tags` column replaced by semicolon-joined QIDs 
 """
 import sys
 from pathlib import Path
-from typing import Dict
 
 import pandas as pd
 import pywikibot
@@ -73,7 +72,7 @@ def main():
         sys.exit(2)
 
     df = pd.read_csv(csv_path)
-    site = create_site()
+    create_site()
 
     mapped = df.copy()
     mapped_count = 0

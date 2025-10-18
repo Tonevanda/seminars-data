@@ -4,10 +4,6 @@
 @prefix smsm: <https://purl.archive.org/domain/smsm> .
 @prefix wd: <http://www.wikidata.org/entity/> .
 
-#################################################################
-# Shape for a Social Media Posting
-#################################################################
-
 schema:SocialMediaPostingShape
     a sh:NodeShape ;
     sh:targetClass schema:SocialMediaPosting ;
@@ -36,7 +32,7 @@ schema:SocialMediaPostingShape
     # language
     sh:property [
         sh:path schema:inLanguage ;
-        sh:nodeKind sh:IRI ;  # since it's wd:Q1860
+        sh:nodeKind sh:IRI ;
     ] ;
 
     # location
@@ -61,7 +57,7 @@ schema:SocialMediaPostingShape
     # platform (custom field)
     sh:property [
         sh:path smsm:platform ;
-        sh:datatype xsd:string ;   # could also be IRI if you use wd:Qxxxx
+        sh:datatype xsd:string ;
     ] ;
 
     # engagement score
@@ -133,7 +129,7 @@ schema:InteractionCounterShape
 
     sh:property [
         sh:path schema:interactionType ;
-        sh:datatype xsd:string ;  # e.g., schema:LikeAction
+        sh:datatype xsd:string ;
         sh:minCount 1 ;
     ] ;
     sh:property [
